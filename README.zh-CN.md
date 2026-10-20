@@ -6,7 +6,7 @@
 > **Fork 声明：** 本仓库 fork 自官方 [dotnet/skills](https://github.com/dotnet/skills)
 > 仓库。所有 skills、插件及工具版权归 © .NET Team at Microsoft 所有，采用
 > [MIT 许可证](LICENSE)。本 fork 唯一的改动是新增了一层 DeepSeek Harness（DSH）
-> 打包，使完整技能目录可以作为 DSH 插件安装——见 [`dsh/`](dsh/) 与下文
+> 打包，使完整技能目录可以作为 DSH 插件安装——见 [`packages/dotnet-skills/`](packages/dotnet-skills/) 与下文
 > [DSH 章节](#deepseek-harness-dsh)。其余内容与上游完全一致，未做修改。
 
 [![Dashboard](https://github.com/dotnet/skills/actions/workflows/pages/pages-build-deployment/badge.svg)](https://dotnet.github.io/skills/)
@@ -57,7 +57,7 @@
 
 ## DeepSeek Harness (DSH)
 
-本 fork 在 [`dsh/`](dsh/) 下提供一个符合官方规范的
+本 fork 在 [`packages/dotnet-skills/`](packages/dotnet-skills/) 下提供一个符合官方规范的
 [DeepSeek Harness](https://deepseek-harness.github.io/deepseek-harness/) bundle，
 把全部 17 个插件、共 105 个 .NET skills 打包为一个可安装的 DSH 组合包，
 通过 `ctx.skills` 提供给模型。
@@ -69,13 +69,13 @@ dsh plugin --profile <name> add dotnet-skills
 也可不经 npm，直接从本仓库安装：
 
 ```sh
-dsh plugin --profile <name> add git+https://github.com/flyneth/dotnet-skills&path:dsh/
+dsh plugin --profile <name> add git+https://github.com/flyneth/dotnet-skills&path:packages/dotnet-skills/
 ```
 
 - 安装后，所有列出该 bundle 的 profile 中全部 skills 均可用；
 - 兼容性声明：`"engines": { "dsh": ">=0.2.0-rc.2" }`；
-- `dsh/skills/` 是 `plugins/` 的静态快照，上游 skills 更新后需重新同步；
-- 细节见 [`dsh/README.md`](dsh/README.md)。
+- `packages/dotnet-skills/skills/` 是 `plugins/` 的静态快照，上游 skills 更新后需重新同步；
+- 细节见 [`packages/dotnet-skills/README.md`](packages/dotnet-skills/README.md)。
 
 ## 安装
 

@@ -8,7 +8,7 @@ English | [中文](README.zh-CN.md)
 > plugins, and tooling are Copyright © the .NET Team at Microsoft, licensed
 > under the [MIT license](LICENSE). The only change made in this fork is a
 > DeepSeek Harness (DSH) packaging layer so the full catalog can be installed
-> as a DSH plugin — see [`dsh/`](dsh/) and the
+> as a DSH plugin — see [`packages/dotnet-skills/`](packages/dotnet-skills/) and the
 > [DSH section](#deepseek-harness-dsh) below. Everything else is unchanged
 > upstream content.
 
@@ -64,7 +64,7 @@ package using the command in its README.
 
 This fork ships an official-spec
 [DeepSeek Harness](https://deepseek-harness.github.io/deepseek-harness/) bundle under
-[`dsh/`](dsh/) that packages all 17 plugins — 105 .NET skills in total — as one installable DSH
+[`packages/dotnet-skills/`](packages/dotnet-skills/) that packages all 17 plugins — 105 .NET skills in total — as one installable DSH
 bundle, exposing the skills to the model through `ctx.skills`.
 
 ```sh
@@ -74,13 +74,13 @@ dsh plugin --profile <name> add dotnet-skills
 Or install from this repository directly, without npm:
 
 ```sh
-dsh plugin --profile <name> add git+https://github.com/flyneth/dotnet-skills&path:dsh/
+dsh plugin --profile <name> add git+https://github.com/flyneth/dotnet-skills&path:packages/dotnet-skills/
 ```
 
 - After installation, all skills are available in every profile that lists the bundle.
 - Compatibility: `"engines": { "dsh": ">=0.2.0-rc.2" }`.
-- `dsh/skills/` is a static snapshot of `plugins/`; re-sync it when the upstream skills change.
-- See [`dsh/README.md`](dsh/README.md) for details.
+- `packages/dotnet-skills/skills/` is a static snapshot of `plugins/`; re-sync it when the upstream skills change.
+- See [`packages/dotnet-skills/README.md`](packages/dotnet-skills/README.md) for details.
 
 ## Installation
 
