@@ -8,8 +8,7 @@ English | [中文](README.zh-CN.md)
 > plugins, and tooling are Copyright © the .NET Team at Microsoft, licensed
 > under the [MIT license](LICENSE). The only change made in this fork is a
 > DeepSeek Harness (DSH) packaging layer so the full catalog can be installed
-> as a DSH plugin — see [`packages/dotnet-skills/`](packages/dotnet-skills/) and the
-> [DSH section](#deepseek-harness-dsh) below. Everything else is unchanged
+> as a DSH plugin — see the [DSH section](#deepseek-harness-dsh) below. Everything else is unchanged
 > upstream content.
 
 [![Dashboard](https://github.com/dotnet/skills/actions/workflows/pages/pages-build-deployment/badge.svg)](https://dotnet.github.io/skills/)
@@ -63,9 +62,10 @@ package using the command in its README.
 ## DeepSeek Harness (DSH)
 
 This fork ships an official-spec
-[DeepSeek Harness](https://deepseek-harness.github.io/deepseek-harness/) bundle under
-[`packages/dotnet-skills/`](packages/dotnet-skills/) that packages all 17 plugins — 105 .NET skills in total — as one installable DSH
-bundle, exposing the skills to the model through `ctx.skills`.
+[DeepSeek Harness](https://deepseek-harness.github.io/deepseek-harness/) bundle at the repository
+root — `package.json` declares `dsh.bundle`, `cordis.patch.yml` mounts the entry, and `index.mjs`
+bridges the skill packs onto `ctx.skills` — packaging all 17 plugins, 105 .NET skills in total,
+as one installable DSH bundle.
 
 ```sh
 dsh plugin --profile <name> add dotnet-skills
@@ -74,13 +74,12 @@ dsh plugin --profile <name> add dotnet-skills
 Or install from this repository directly, without npm:
 
 ```sh
-dsh plugin --profile <name> add git+https://github.com/flyneth/dotnet-skills&path:packages/dotnet-skills/
+dsh plugin --profile <name> add git+https://github.com/flyneth/dotnet-skills
 ```
 
 - After installation, all skills are available in every profile that lists the bundle.
 - Compatibility: `"engines": { "dsh": ">=0.2.0-rc.2" }`.
-- `packages/dotnet-skills/skills/` is a static snapshot of `plugins/`; re-sync it when the upstream skills change.
-- See [`packages/dotnet-skills/README.md`](packages/dotnet-skills/README.md) for details.
+- Skills are read straight from `plugins/<plugin>/skills/<skill>/SKILL.md` at load time — no snapshot, so upstream updates flow through automatically.
 
 ## Installation
 
