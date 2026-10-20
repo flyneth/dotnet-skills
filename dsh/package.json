@@ -1,0 +1,33 @@
+{
+  "name": "dotnet-skills",
+  "version": "0.2.0",
+  "description": "DeepSeek Harness bundle that registers the full dotnet/skills plugin pack (105 skills from all 17 plugins of the github.com/dotnet/skills repository) on ctx.skills.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flyneth/dotnet-skills.git",
+    "directory": "dsh"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dotnet"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "dependencies": {
+    "yaml": "^2.4.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
