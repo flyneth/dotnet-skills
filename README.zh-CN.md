@@ -60,7 +60,7 @@
 本 fork 在仓库根目录提供一个符合官方规范的
 [DeepSeek Harness](https://deepseek-harness.github.io/deepseek-harness/) bundle——`package.json`
 声明 `dsh.bundle`，`cordis.patch.yml` 挂载入口，`index.mjs` 把技能包桥接到 `ctx.skills`——
-把全部 17 个插件、共 105 个 .NET skills 打包为一个可安装的 DSH 组合包。
+把全部 17 个插件、共 106 个 .NET skills 打包为一个可安装的 DSH 组合包。
 
 **方式一 · npm（推荐）**
 

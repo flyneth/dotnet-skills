@@ -66,7 +66,7 @@ package using the command in its README.
 This fork ships an official-spec
 [DeepSeek Harness](https://deepseek-harness.github.io/deepseek-harness/) bundle at the repository
 root — `package.json` declares `dsh.bundle`, `cordis.patch.yml` mounts the entry, and `index.mjs`
-bridges the skill packs onto `ctx.skills` — packaging all 17 plugins, 105 .NET skills in total,
+bridges the skill packs onto `ctx.skills` — packaging all 17 plugins, 106 .NET skills in total,
 as one installable DSH bundle.
 
 **Option 1 · npm (recommended)**
@@ -95,8 +95,8 @@ dsh plugin --profile <name> add github:flyneth/dotnet-skills
 Same profile rule applies — `--profile web` for the default web profile.
 
 - After installation, all skills are available in every profile that lists the bundle.
-- Compatibility: `"engines: { "dsh": ">=0.2.0-rc.2" }`.
-- Skills are read straight from `plugins/<plugin>/skills/<skill>/SKILL.md` at load time — no snapshot, so upstream updates flow through automatically."
+- Compatibility: `"engines": { "dsh": ">=0.2.0-rc.2" }`.
+- Skills are read straight from `plugins/<plugin>/skills/<skill>/SKILL.md` at load time — no snapshot, so upstream updates flow through automatically.
 
 <details>
 <summary><b>Other host installation methods (inherited from upstream: Copilot CLI / Claude Code / VS Code / Cursor / Codex CLI)</b></summary>

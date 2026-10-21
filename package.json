@@ -1,7 +1,7 @@
 {
   "name": "dotnet-skills",
-  "version": "0.2.2",
-  "description": "DeepSeek Harness bundle that registers the full dotnet/skills plugin pack (105 skills from all 17 plugins of the github.com/dotnet/skills repository) on ctx.skills.",
+  "version": "0.2.3",
+  "description": "DeepSeek Harness bundle that registers the full dotnet/skills plugin pack (106 skills from all 17 plugins of the github.com/dotnet/skills repository) on ctx.skills.",
   "main": "./index.mjs",
   "exports": {
     ".": "./index.mjs",
