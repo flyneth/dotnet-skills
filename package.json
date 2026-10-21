@@ -20,7 +20,11 @@
   "keywords": [
     "dsh-plugin",
     "deepseek-harness",
-    "dotnet"
+    "dsh",
+    "dotnet",
+    "csharp",
+    "agent-skills",
+    "skills"
   ],
   "engines": {
     "dsh": ">=0.2.0-rc.2"

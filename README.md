@@ -74,7 +74,7 @@ dsh plugin --profile <name> add dotnet-skills
 Or install from this repository directly, without npm:
 
 ```sh
-dsh plugin --profile <name> add git+https://github.com/flyneth/dotnet-skills
+dsh plugin --profile <name> add github:flyneth/dotnet-skills
 ```
 
 - After installation, all skills are available in every profile that lists the bundle.

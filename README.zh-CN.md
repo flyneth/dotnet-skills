@@ -68,7 +68,7 @@ dsh plugin --profile <name> add dotnet-skills
 也可不经 npm，直接从本仓库安装：
 
 ```sh
-dsh plugin --profile <name> add git+https://github.com/flyneth/dotnet-skills
+dsh plugin --profile <name> add github:flyneth/dotnet-skills
 ```
 
 - 安装后，所有列出该 bundle 的 profile 中全部 skills 均可用；
