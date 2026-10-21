@@ -6,7 +6,8 @@
 > **Fork 声明：** 本仓库 fork 自官方 [dotnet/skills](https://github.com/dotnet/skills)
 > 仓库。所有 skills、插件及工具版权归 © .NET Team at Microsoft 所有，采用
 > [MIT 许可证](LICENSE)。本 fork 唯一的改动是新增了一层 DeepSeek Harness（DSH）
-> 打包，使完整技能目录可以作为 DSH 插件安装——见下文 [DSH 章节](#deepseek-harness-dsh)。其余内容与上游完全一致，未做修改。
+> 打包，使完整技能目录可以作为 DSH 插件安装——见下文 [DSH 章节](#deepseek-harness-dsh)。在下方其他安装方式中，将
+> `dotnet/skills` 替换为 `flyneth/dotnet-skills` 即可安装本 fork 版本。其余内容与上游完全一致，未做修改。
 
 [![Dashboard](https://github.com/dotnet/skills/actions/workflows/pages/pages-build-deployment/badge.svg)](https://dotnet.github.io/skills/)
 
@@ -61,21 +62,39 @@
 声明 `dsh.bundle`，`cordis.patch.yml` 挂载入口，`index.mjs` 把技能包桥接到 `ctx.skills`——
 把全部 17 个插件、共 105 个 .NET skills 打包为一个可安装的 DSH 组合包。
 
+**方式一 · npm（推荐）**
+
 ```sh
 dsh plugin --profile <name> add dotnet-skills
 ```
 
-也可不经 npm，直接从本仓库安装：
+`<name>` 为目标 profile 名；默认 Web 配置即用 `--profile web`：
+
+```sh
+dsh plugin --profile web add dotnet-skills
+```
+
+**方式二 · dsh-market（收录后一键安装）**
+
+被 [dsh-market](https://github.com/dsh-market/dsh-market) 目录收录后：打开 Web UI 的插件市场，
+搜索 `dotnet-skills`，一键安装。
+
+**方式三 · 从本仓库直装（不经 npm）**
 
 ```sh
 dsh plugin --profile <name> add github:flyneth/dotnet-skills
 ```
 
+profile 规则相同——默认 Web 配置使用 `--profile web`。
+
 - 安装后，所有列出该 bundle 的 profile 中全部 skills 均可用；
 - 兼容性声明：`"engines": { "dsh": ">=0.2.0-rc.2" }`；
 - 技能在加载时直接从 `plugins/<插件>/skills/<技能>/SKILL.md` 读取——无需快照，上游更新自动生效。
 
-## 安装
+<details>
+<summary><b>其他宿主安装方式（继承自上游：Copilot CLI / Claude Code / VS Code / Cursor / Codex CLI）</b></summary>
+
+下方命令中的 `dotnet/skills` 替换为 `flyneth/dotnet-skills` 即可安装本 fork 版本。
 
 ### 🚀 插件 - Copilot CLI / Claude Code
 
@@ -170,6 +189,8 @@ Codex CLI v0.121.0 及以上版本支持[插件市场](https://developers.openai
 ```bash
 $ skill-installer install https://github.com/dotnet/skills/tree/main/plugins/<plugin>/skills/<skill-name>
 ```
+
+</details>
 
 ## 参与贡献
 

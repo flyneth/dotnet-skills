@@ -8,7 +8,9 @@ English | [中文](README.zh-CN.md)
 > plugins, and tooling are Copyright © the .NET Team at Microsoft, licensed
 > under the [MIT license](LICENSE). The only change made in this fork is a
 > DeepSeek Harness (DSH) packaging layer so the full catalog can be installed
-> as a DSH plugin — see the [DSH section](#deepseek-harness-dsh) below. Everything else is unchanged
+> as a DSH plugin — see the [DSH section](#deepseek-harness-dsh) below. In the other install
+> methods below, replace `dotnet/skills` with `flyneth/dotnet-skills` to install this fork's
+> version. Everything else is unchanged
 > upstream content.
 
 [![Dashboard](https://github.com/dotnet/skills/actions/workflows/pages/pages-build-deployment/badge.svg)](https://dotnet.github.io/skills/)
@@ -67,21 +69,39 @@ root — `package.json` declares `dsh.bundle`, `cordis.patch.yml` mounts the ent
 bridges the skill packs onto `ctx.skills` — packaging all 17 plugins, 105 .NET skills in total,
 as one installable DSH bundle.
 
+**Option 1 · npm (recommended)**
+
 ```sh
 dsh plugin --profile <name> add dotnet-skills
 ```
 
-Or install from this repository directly, without npm:
+`<name>` is the target profile; for the default web profile use `--profile web`:
+
+```sh
+dsh plugin --profile web add dotnet-skills
+```
+
+**Option 2 · dsh-market (one-click, once listed)**
+
+Once listed in the [dsh-market](https://github.com/dsh-market/dsh-market) catalog: open the plugin
+market in the web UI, search `dotnet-skills`, and install with one click.
+
+**Option 3 · from this repository (no npm)**
 
 ```sh
 dsh plugin --profile <name> add github:flyneth/dotnet-skills
 ```
 
-- After installation, all skills are available in every profile that lists the bundle.
-- Compatibility: `"engines": { "dsh": ">=0.2.0-rc.2" }`.
-- Skills are read straight from `plugins/<plugin>/skills/<skill>/SKILL.md` at load time — no snapshot, so upstream updates flow through automatically.
+Same profile rule applies — `--profile web` for the default web profile.
 
-## Installation
+- After installation, all skills are available in every profile that lists the bundle.
+- Compatibility: `"engines: { "dsh": ">=0.2.0-rc.2" }`.
+- Skills are read straight from `plugins/<plugin>/skills/<skill>/SKILL.md` at load time — no snapshot, so upstream updates flow through automatically."
+
+<details>
+<summary><b>Other host installation methods (inherited from upstream: Copilot CLI / Claude Code / VS Code / Cursor / Codex CLI)</b></summary>
+
+Replace `dotnet/skills` with `flyneth/dotnet-skills` in the commands below to install this fork's version.
 
 ### 🚀 Plugins - Copilot CLI / Claude Code
 
@@ -177,6 +197,8 @@ You can also install individual skills using the `skill-installer` CLI with the 
 ```bash
 $ skill-installer install https://github.com/dotnet/skills/tree/main/plugins/<plugin>/skills/<skill-name>
 ```
+
+</details>
 
 ## Contributing
 
