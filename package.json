@@ -1,7 +1,7 @@
 {
   "name": "dotnet-skills",
   "version": "0.2.3",
-  "description": "DeepSeek Harness bundle that registers the full dotnet/skills plugin pack (106 skills from all 17 plugins of the github.com/dotnet/skills repository) on ctx.skills.",
+  "description": "A fork of Microsoft's official .NET/C# skills for AI coding agents, additionally packaged as a DeepSeek Harness plugin — covering development, testing, diagnostics, migration, and AI integration.",
   "main": "./index.mjs",
   "exports": {
     ".": "./index.mjs",
