@@ -1,0 +1,204 @@
+# Publishes the root DeepSeek Harness bundle (`dotnet-skills`) to npm whenever a
+# GitHub release is published, using npm trusted publishing (OIDC). No long-lived
+# npm token lives in this repository or in GitHub secrets.
+#
+# One-time npm configuration — see docs/dsh-npm-publish.md:
+#   npmjs.com -> package `dotnet-skills` -> Settings -> Trusted publishing
+#   -> GitHub Actions, with Organization/user `flyneth`, Repository `dotnet-skills`,
+#   Workflow filename `publish-npm.yml` (exactly this file name), no environment.
+#
+# Trusted publishing needs npm CLI >= 11.5.1 and Node >= 22.14.0; the preflight
+# step fails loudly instead of silently falling back to token authentication.
+#
+# Release contract: the release tag must be `v<package.json version>` (e.g. `v0.2.5`
+# for version 0.2.5). Merge the version bump to `main` before creating the release.
+# A tag/version mismatch fails the run; a version that is already on the registry
+# is skipped as a no-op so re-runs are safe.
+name: publish-npm
+run-name: "Publish dotnet-skills ${{ inputs.tag || github.event.release.tag_name }}"
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to publish (for example v0.2.5). Must match package.json.
+        required: true
+
+concurrency:
+  group: publish-npm
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  # Required for the GitHub OIDC token that npm exchanges for a short-lived
+  # publish credential. Nothing else in this workflow needs elevated access.
+  id-token: write
+
+jobs:
+  publish:
+    # The trusted publisher is registered for this repository only. A release made
+    # in a fork cannot publish under it, so skip there instead of failing noisily.
+    if: github.repository == 'flyneth/dotnet-skills'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout the release tag
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Publish exactly what the tag points at, never a moving branch head.
+          ref: ${{ inputs.tag || github.event.release.tag_name }}
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+          # Release builds must never restore contents from a cache.
+          package-manager-cache: false
+
+      - name: Verify the npm CLI supports trusted publishing
+        run: |
+          set -euo pipefail
+          export NPM_VERSION="$(npm --version)"
+          echo "npm $NPM_VERSION"
+          node -e '
+            const [major, minor, patch] = process.env.NPM_VERSION.split(".").map(Number)
+            const supported = major > 11 || (major === 11 && (minor > 5 || (minor === 5 && patch >= 1)))
+            if (!supported) {
+              console.error(`npm ${process.env.NPM_VERSION} cannot authenticate with trusted publishing; npm >= 11.5.1 (Node >= 22.14.0) is required.`)
+              process.exit(1)
+            }
+          '
+
+      - name: Resolve the release version
+        id: version
+        env:
+          RELEASE_TAG: ${{ inputs.tag || github.event.release.tag_name }}
+        run: |
+          set -euo pipefail
+          if [[ -z "$RELEASE_TAG" ]]; then
+            echo "::error::No release tag was resolved from the event or the workflow input."
+            exit 1
+          fi
+          VERSION="$(node -p "require('./package.json').version")"
+          TAG_VERSION="${RELEASE_TAG#v}"
+          if [[ "$TAG_VERSION" != "$VERSION" ]]; then
+            echo "::error::Release tag '$RELEASE_TAG' does not match package.json version '$VERSION'. Bump package.json, merge it, and create the release from that commit."
+            exit 1
+          fi
+          # A prerelease version must never move the `latest` dist-tag.
+          if [[ "$VERSION" == *-* ]]; then DIST_TAG=next; else DIST_TAG=latest; fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "dist_tag=$DIST_TAG" >> "$GITHUB_OUTPUT"
+          echo "Resolved dotnet-skills@$VERSION (dist-tag: $DIST_TAG) from tag $RELEASE_TAG"
+
+      - name: Check the registry for an existing version
+        id: registry
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          set -uo pipefail
+          OUTPUT="$(npm view "dotnet-skills@${VERSION}" version 2>&1)" && STATUS=0 || STATUS=$?
+          if [[ $STATUS -eq 0 ]]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "dotnet-skills@${VERSION} is already published; nothing to do."
+          elif grep -qE 'E404|404 Not Found' <<< "$OUTPUT"; then
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "dotnet-skills@${VERSION} is not on the registry yet."
+          else
+            echo "::error::Could not query the registry for dotnet-skills@${VERSION}."
+            printf '%s\n' "$OUTPUT"
+            exit 1
+          fi
+
+      - name: Verify the packaged payload
+        if: steps.registry.outputs.exists != 'true'
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          set -euo pipefail
+          # The installed tarball must register exactly the skill bundles this
+          # repository ships. A truncated `files` whitelist or a missing `plugins/`
+          # tree therefore fails here instead of in users' profiles.
+          EXPECTED="$(find plugins -path '*/skills/*' -name SKILL.md | wc -l | tr -d ' ')"
+          echo "Repository skill bundles: $EXPECTED"
+          TARBALL="$(npm pack --silent | tail -n 1)"
+          # Defensive fallback: some npm versions suppress the filename under --silent.
+          if [[ -z "$TARBALL" || ! -f "$TARBALL" ]]; then
+            TARBALL="$(ls dotnet-skills-*.tgz | head -n 1)"
+          fi
+          echo "Packed $TARBALL"
+          SMOKE_DIR="$(mktemp -d)"
+          cp "$TARBALL" "$SMOKE_DIR/"
+          cd "$SMOKE_DIR"
+          npm init --yes >/dev/null
+          npm install --no-audit --no-fund --ignore-scripts "./$TARBALL" >/dev/null
+          cat > smoke.mjs <<'SMOKE'
+          import { apply } from 'dotnet-skills'
+
+          let provider
+          apply({ skills: { registerProvider: factory => { provider = factory() } } })
+          const listed = await provider.list()
+          const expected = Number(process.env.EXPECTED)
+          if (listed.length !== expected) {
+            throw new Error(`installed package registers ${listed.length} skills, repository ships ${expected}`)
+          }
+          console.log(`Installed package registers ${listed.length} skills.`)
+          SMOKE
+          EXPECTED="$EXPECTED" node smoke.mjs
+
+      - name: Publish to npm
+        if: steps.registry.outputs.exists != 'true'
+        env:
+          DIST_TAG: ${{ steps.version.outputs.dist_tag }}
+        run: |
+          set -euo pipefail
+          # No NODE_AUTH_TOKEN here on purpose: the npm CLI exchanges the GitHub OIDC
+          # token for a short-lived publish credential and attaches provenance
+          # automatically, so there is no secret to leak or rotate.
+          npm publish --tag "$DIST_TAG"
+
+      - name: Verify the published release
+        if: steps.registry.outputs.exists != 'true'
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          set -euo pipefail
+          PUBLISHED=""
+          for attempt in 1 2 3 4 5; do
+            PUBLISHED="$(npm view "dotnet-skills@${VERSION}" version 2>/dev/null || true)"
+            if [[ "$PUBLISHED" == "$VERSION" ]]; then break; fi
+            echo "The registry does not serve dotnet-skills@${VERSION} yet (attempt ${attempt}/5); retrying in 5s."
+            sleep 5
+          done
+          if [[ "$PUBLISHED" != "$VERSION" ]]; then
+            echo "::error::dotnet-skills@${VERSION} is not readable from the registry after publishing (got '$PUBLISHED')."
+            exit 1
+          fi
+          echo "dotnet-skills@${VERSION} is live."
+          npm view "dotnet-skills@${VERSION}" dist.tarball dist.attestations.url --json || true
+
+      - name: Summarize
+        if: always()
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+          EXISTS: ${{ steps.registry.outputs.exists }}
+          DIST_TAG: ${{ steps.version.outputs.dist_tag }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          {
+            echo "## npm publish"
+            echo ""
+            if [[ "$EXISTS" == "true" ]]; then
+              echo "dotnet-skills@${VERSION} was already on the registry — nothing was published (idempotent re-run)."
+            elif [[ "$JOB_STATUS" == "success" ]]; then
+              echo "Published dotnet-skills@${VERSION} with dist-tag \`${DIST_TAG}\` via trusted publishing."
+              echo ""
+              echo "Package: https://www.npmjs.com/package/dotnet-skills/v/${VERSION}"
+            else
+              echo "Publish did not complete — see the failed step above."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
