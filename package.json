@@ -1,6 +1,6 @@
 {
   "name": "dotnet-skills",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "A fork of Microsoft's official .NET/C# skills for AI coding agents, additionally packaged as a DeepSeek Harness plugin — covering development, testing, diagnostics, migration, and AI integration.",
   "icon": "./icon.svg",
   "main": "./index.mjs",
