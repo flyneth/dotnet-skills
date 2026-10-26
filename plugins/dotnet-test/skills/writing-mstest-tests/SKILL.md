@@ -12,6 +12,7 @@ description: >
   MSTest version. DO NOT USE to design new test cases (code-testing),
   perform report-only audits, create project files rather than explain MSTest
   setup, run tests, migrate frameworks, or handle non-MSTest/non-.NET code.
+  中文触发:修复或改进 MSTest 测试、MSTest 特有配置问题。
 license: MIT
 metadata:
   portability: portable

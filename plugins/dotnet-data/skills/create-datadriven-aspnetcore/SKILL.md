@@ -1,6 +1,7 @@
 ---
 name: create-datadriven-aspnetcore
 description: Generate or scaffold ASP.NET Core code — Razor Pages, Blazor components, MVC controllers, views, and Minimal API endpoints — without using ASP.NET Core CLI scaffolding/code-generation tools. Use when (1) adding CRUD pages, views, or API endpoints backed by Entity Framework (EF Core) and a database, (2) generating code to create, read, update, and delete data using a DbContext, (3) scaffolding UI components that match the project's existing CSS framework and coding patterns, or (4) creating data-driven forms, tables, and navigation for a model class. Do not use for non-ASP.NET projects or when CLI-based scaffolding is preferred.
+  中文触发:手写生成 ASP.NET Core 代码、Razor Pages、MVC 控制器与视图、数据驱动页面、最小 API 端点。
 ---
 
 # Generate or Scaffold ASP.NET Core Code

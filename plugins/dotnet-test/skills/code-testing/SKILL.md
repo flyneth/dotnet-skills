@@ -11,6 +11,7 @@ description: >-
   API/configuration corrections that do not design new cases
   (writing-mstest-tests). Within an active test-engineer pipeline, reuse supplied
   guidance and do not re-enter this skill.
+  中文触发:写测试、加测试、修测试、补测试、强化测试(xUnit/MSTest/NUnit/pytest 等)。
 license: MIT
 ---
 

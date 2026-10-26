@@ -11,6 +11,7 @@ description: >
   DO NOT USE for general component authoring (see author-component), for prerendering concerns
   unrelated to auth (see support-prerendering), or for managing non-auth cascading state
   (see coordinate-components).
+  中文触发:Blazor 登录认证授权、[Authorize]、AuthenticationStateProvider、认证配置。
 ---
 
 # Configure Auth

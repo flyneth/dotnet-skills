@@ -11,6 +11,7 @@ description: >-
   (platform-detection), writing or debugging test code, interpreting an
   existing coverage report, CI investigation, migration, or a persistent hot
   reload/watch loop.
+  中文触发:运行 .NET 测试、dotnet test 命令、跑单个测试或按条件过滤。
 license: MIT
 metadata:
   portability: portable

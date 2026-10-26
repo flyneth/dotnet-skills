@@ -8,6 +8,7 @@ description: >
   DO NOT USE FOR: publishing native AOT binaries, optimizing binary size, replacing
   reflection-heavy libraries with alternatives.
   INVOKES: no tools — pure knowledge skill.
+  中文触发:Native AOT 兼容、裁剪警告、IL2026/IL3050、AOT 发布失败。
 license: MIT
 ---
 

@@ -10,6 +10,7 @@ description: >
   and resolving EF Core 9 migration/Cosmos DB changes.
   DO NOT USE FOR: .NET Framework migrations, upgrading from .NET 7 or earlier,
   greenfield .NET 9 projects, or cosmetic modernization unrelated to the upgrade.
+  中文触发:.NET 8 升级到 9、net9.0、升级后报错。
 license: MIT
 ---
 

@@ -9,6 +9,7 @@ description: >
   errors, TRX/dumps, or merely a failing test, use run-tests. Do not use when
   Test Explorer or an IDE should rerun tests without an MTP console host.
   Excludes editor integration, CI, and writing/debugging tests.
+  中文触发:MTP 热重载、测试编辑即重跑的循环。
 license: MIT
 ---
 

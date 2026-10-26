@@ -12,6 +12,7 @@ description: >
   validation (use collect-user-input), prerendering issues (use support-prerendering),
   HTTP data fetching patterns (use fetch-and-send-data), coordinating state between
   unrelated components (use coordinate-components).
+  中文触发:编写或审查 Blazor 组件、参数与 EventCallback、RenderFragment、组件生命周期、CSS 隔离。
 ---
 
 # Author Blazor Component

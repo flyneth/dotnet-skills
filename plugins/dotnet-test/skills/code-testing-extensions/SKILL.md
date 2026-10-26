@@ -5,6 +5,7 @@ description: >-
   pipeline. Read this reference-only catalog for extension guidance files
   (e.g., dotnet.md for .NET, cpp.md for C++). Agents and skills read its bundled
   files directly; do not invoke this catalog through the model's skill tool.
+  中文说明:code-testing 流水线的扩展文件目录(仅引用,不自行激活)。
 user-invocable: false
 disable-model-invocation: true
 license: MIT

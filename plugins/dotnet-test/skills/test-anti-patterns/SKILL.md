@@ -13,6 +13,7 @@ description: >
   (crap-score), behavioral/pseudo-mutation gaps (test-gap-analysis), test-mix/
   happy-vs-error classification and trait distributions (test-tagging), or the
   testsmells.org catalog (test-smell-detection).
+  中文触发:测试反模式审查、测试没测到东西、缺断言或同义反复断言。
 license: MIT
 ---
 

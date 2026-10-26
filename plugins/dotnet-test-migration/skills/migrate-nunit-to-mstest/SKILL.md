@@ -9,6 +9,7 @@ description: >
   to MSTest" request may already be migrated: inspect and report the no-op. Do
   not use for NUnit version upgrades, xUnit/TUnit conversion, MSTest upgrades,
   or runner-only VSTest-to-MTP migration.
+  中文触发:NUnit 迁移到 MSTest、替换 NUnit 与 NUnit3TestAdapter。
 license: MIT
 ---
 

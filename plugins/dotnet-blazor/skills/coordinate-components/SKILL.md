@@ -13,6 +13,7 @@ description: >
   DO NOT USE for direct parent-child parameter passing or EventCallback (see author-component),
   for persisting state across prerender-to-interactive transitions (see support-prerendering),
   or for service abstractions for data fetching in Auto/WebAssembly (see fetch-and-send-data).
+  中文触发:Blazor 组件间共享状态、级联值 CascadingValue、作用域服务、非父子组件通信。
 ---
 
 # Coordinate Components

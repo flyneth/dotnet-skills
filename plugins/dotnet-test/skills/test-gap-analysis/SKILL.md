@@ -9,6 +9,7 @@ description: >-
   suite taxonomy (test-tagging); .NET coverage, Cobertura, plateaus or
   coverage-backed priorities (coverage-analysis); named CRAP (crap-score);
   new suites (code-testing); assertion/smell audits; mutation tools.
+  中文触发:测试缺口分析、现有测试会漏掉哪些生产改动。
 license: MIT
 ---
 

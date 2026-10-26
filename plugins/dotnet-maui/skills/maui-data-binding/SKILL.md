@@ -13,6 +13,7 @@ description: >-
   maui-collectionview), Shell navigation data passing (use
   maui-shell-navigation), dependency injection (use maui-dependency-injection),
   or animations triggered by property changes (use .NET MAUI animation APIs).
+  中文触发:MAUI 数据绑定、INotifyPropertyChanged、值转换器、绑定模式。
 license: MIT
 ---
 

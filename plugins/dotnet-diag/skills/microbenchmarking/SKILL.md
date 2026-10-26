@@ -11,6 +11,7 @@ description: >
   performance comparisons.
   Do NOT use for profiling/tracing .NET code (dotnet-trace, PerfView), production
   telemetry, or load/stress testing (Crank, k6).
+  中文触发:BenchmarkDotNet 基准测试、微基准、性能测量。
 license: MIT
 ---
 

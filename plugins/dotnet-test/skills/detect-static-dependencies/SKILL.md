@@ -10,6 +10,7 @@ description: >
   DO NOT USE FOR: any target lacking the activation prerequisite; generating
   wrappers (use generate-testability-wrappers); migrating code (use
   migrate-static-to-wrapper); or general code review.
+  中文触发:检测 C# 静态依赖、静态方法难以测试。
 license: MIT
 ---
 

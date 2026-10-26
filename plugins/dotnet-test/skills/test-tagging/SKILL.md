@@ -9,6 +9,7 @@ description: >
   mislead. Apply canonical attributes; otherwise report only. DO NOT USE FOR:
   requests owned by test-anti-patterns, coverage-analysis, crap-score,
   test-gap-analysis, code-testing, or migration skills.
+  中文触发:给测试分类打标签、统计测试特征分布。
 license: MIT
 ---
 

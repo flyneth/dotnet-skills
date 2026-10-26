@@ -11,6 +11,7 @@ description: >
   whether a type's serialization metadata is resolved.
   DO NOT USE when the target is earlier than net11.0, the requested behavior uses an
   established pre-net11 naming policy, or the user explicitly selected another JSON library.
+  中文触发:.NET 11 新 System.Text.Json API、PascalCase 命名策略。
 license: MIT
 ---
 

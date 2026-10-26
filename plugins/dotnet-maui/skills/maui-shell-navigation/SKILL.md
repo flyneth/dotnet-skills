@@ -11,6 +11,7 @@ description: >-
   Do not use for: deep linking from external URLs (see .NET MAUI deep linking
   documentation), data binding on pages (use maui-data-binding), dependency injection
   setup (use maui-dependency-injection), or NavigationPage-only apps that don't use Shell.
+  中文触发:MAUI Shell 导航、AppShell、FlyoutItem、TabBar、路由传参。
 license: MIT
 ---
 

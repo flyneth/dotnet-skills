@@ -9,6 +9,7 @@ description: >-
   serialization. DO NOT USE FOR: WPF or WPF XAML, including Window.InputBindings,
   KeyBinding, commands, or DataContext; .NET MAUI; Avalonia; or any request where none
   of the listed Windows Forms markers is present.
+  中文触发:WinForms 窗体应用、Windows Forms 开发调试与审查。
 license: MIT
 ---
 

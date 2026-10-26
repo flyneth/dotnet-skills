@@ -12,6 +12,7 @@ description: >
   template-validation), finding or using existing templates (use template-discovery and
   template-instantiation), MSBuild project file issues unrelated to template authoring,
   NuGet package publishing (only template packaging structure).
+  中文触发:把现有项目做成 dotnet new 模板、编写 template.json。
 license: MIT
 ---
 

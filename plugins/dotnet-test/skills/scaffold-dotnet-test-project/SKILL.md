@@ -9,6 +9,7 @@ description: >-
   packages. DO NOT USE to only author tests in an already-wired project
   (code-testing), run tests, migrate, or correct MSTest syntax/configuration
   without changing project or CI files (writing-mstest-tests).
+  中文触发:测试项目从解决方案里丢了、重建测试项目、加回 .slnf/CI。
 license: MIT
 metadata:
   portability: portable

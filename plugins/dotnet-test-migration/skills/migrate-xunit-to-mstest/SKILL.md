@@ -8,6 +8,7 @@ description: >
   use when a "convert xUnit to MSTest" request may already be migrated: inspect
   and report the no-op. Do not use for xUnit v2-to-v3, MSTest upgrades,
   NUnit/TUnit conversion, or runner-only VSTest-to-MTP migration.
+  中文触发:xUnit 迁移到 MSTest、Fact/Theory/InlineData 转换。
 license: MIT
 ---
 

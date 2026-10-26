@@ -12,6 +12,7 @@ description: >
   DO NOT USE FOR: .NET Framework migrations, upgrading from .NET 9 or earlier,
   greenfield .NET 11 projects, or cosmetic modernization unrelated to the upgrade.
   NOTE: .NET 11 is in preview. Covers breaking changes through Preview 3.
+  中文触发:.NET 10 升级到 .NET 11、net11.0、升级破坏性变更。
 license: MIT
 ---
 

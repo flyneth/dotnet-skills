@@ -9,6 +9,7 @@ description: >-
   `.binlog`, or a plugin missing from `/skills`; also use for C# semantics
   when no narrower specialist exists. DO NOT USE FOR: requests that already name the exact
   installed specialist to invoke, or work unrelated to C# or .NET.
+  中文触发:C#/.NET 问题路由、该用哪个技能或插件、找不到对口专家。
 license: MIT
 ---
 
