@@ -1,6 +1,6 @@
 {
   "name": "dotnet-skills",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A fork of Microsoft's official .NET/C# skills for AI coding agents, additionally packaged as a DeepSeek Harness plugin — covering development, testing, diagnostics, migration, and AI integration.",
   "icon": "./icon.svg",
   "main": "./index.mjs",
@@ -37,6 +37,14 @@
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
+    },
+    "title": {
+      "en": ".NET/C# Skills",
+      "zh": ".NET/C# 技能"
+    },
+    "description": {
+      "en": "A fork of Microsoft's official .NET/C# skills for AI coding agents, additionally packaged as a DeepSeek Harness plugin — covering development, testing, diagnostics, migration, and AI integration.",
+      "zh": "Microsoft 官方 .NET/C# 技能的分支，额外打包为 DeepSeek Harness 插件 — 涵盖开发、测试、诊断、迁移和 AI 集成。"
     }
   }
 }
