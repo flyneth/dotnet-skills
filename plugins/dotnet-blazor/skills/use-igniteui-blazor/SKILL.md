@@ -15,6 +15,7 @@ description: >
   JavaScript interop (see use-js-interop), authentication (see configure-auth),
   prerendering (see support-prerendering), or layout/component design questions that need
   no Ignite UI setup.
+  中文触发:安装或配置 Ignite UI for Blazor 组件库。
 ---
 
 # Application Setup & Component Registration

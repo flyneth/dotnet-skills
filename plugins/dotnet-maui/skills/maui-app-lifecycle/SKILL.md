@@ -11,6 +11,7 @@ description: >-
   DO NOT USE FOR: navigation events (use maui-shell-navigation),
   dependency injection setup (use maui-dependency-injection),
   platform API invocation (use conditional compilation and partial classes).
+  中文触发:MAUI 应用生命周期、窗口事件、前后台切换。
 license: MIT
 ---
 

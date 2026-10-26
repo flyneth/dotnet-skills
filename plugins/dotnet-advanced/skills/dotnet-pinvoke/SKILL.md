@@ -9,6 +9,7 @@ description: >
   crashes, memory leaks, or corruption at the managed/native boundary.
   DO NOT USE FOR: COM interop, C++/CLI mixed-mode assemblies, or pure managed code with
   no native dependencies.
+  中文触发:P/Invoke、LibraryImport、调用 C/C++ 原生库、DllImport、字符串封送、托管与非托管边界的崩溃或内存泄漏。
 license: MIT
 ---
 

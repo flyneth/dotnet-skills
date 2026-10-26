@@ -6,6 +6,7 @@ description: >
   migrate from NuGet API key, NuGet/login, secure NuGet publishing.
   DO NOT USE FOR: publishing to private feeds or Azure Artifacts (OIDC is nuget.org only).
   INVOKES: shell (powershell or bash), edit, create, ask_user for guided repo setup.
+  中文触发:NuGet 可信发布、OIDC 无密钥发布、替换长期 API key、GitHub Actions 发布 NuGet 包。
 license: MIT
 ---
 

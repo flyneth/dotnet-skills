@@ -12,6 +12,7 @@ description: >-
   DO NOT USE FOR: general layout or grid design (use Grid and StackLayout),
   app lifecycle handling (use maui-app-lifecycle), theming or styling
   (use maui-theming), or Shell navigation structure.
+  中文触发:MAUI 安全区、沉浸式全面屏布局、SafeAreaEdges、刘海屏。
 license: MIT
 ---
 

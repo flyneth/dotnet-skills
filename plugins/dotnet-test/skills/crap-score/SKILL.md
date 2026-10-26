@@ -7,6 +7,7 @@ description: >
   FOR: project-wide coverage/CRAP, plateaus, or project-wide blockers/priorities
   (coverage-analysis); behavioral/pseudo-mutation gaps (test-gap-analysis);
   writing tests; test runs without CRAP context.
+  中文触发:计算 CRAP 分数、覆盖率加复杂度的风险评分。
 license: MIT
 ---
 

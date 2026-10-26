@@ -16,6 +16,7 @@ description: >
   LOADS REFERENCES: csharp-compiler, core-libraries, sdk-msbuild (always);
   aspnet-core, efcore, cryptography, extensions-hosting,
   serialization-networking, winforms-wpf, containers-interop (selective).
+  中文触发:.NET 9 升级到 10、net10.0、升级后报错。
 license: MIT
 ---
 

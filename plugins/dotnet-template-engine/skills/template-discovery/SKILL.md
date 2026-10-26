@@ -13,6 +13,7 @@ description: >
   (use template-comparison), choosing cross-parameter defaults during creation
   (use template-smart-defaults), MSBuild or build issues (use dotnet-msbuild plugin),
   NuGet package management unrelated to template packages.
+  中文触发:找合适的 .NET 项目模板、根据需求推荐模板。
 license: MIT
 ---
 

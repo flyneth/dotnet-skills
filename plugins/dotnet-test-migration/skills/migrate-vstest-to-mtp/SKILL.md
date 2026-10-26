@@ -11,6 +11,7 @@ description: >
   filters, logger, coverage, blame, or dump arguments; replacing VSTest@3;
   and exit code 8 or zero tests. Also use for xUnit v3 MTP filters during a
   v2-to-v3 upgrade. Do not use for framework conversion, TFM, UWP, or WinUI.
+  中文触发:VSTest 切换到 Microsoft.Testing.Platform、MTP 迁移。
 license: MIT
 ---
 

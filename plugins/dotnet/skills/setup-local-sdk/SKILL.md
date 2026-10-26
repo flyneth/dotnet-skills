@@ -9,6 +9,7 @@ description: >
   creating reproducible team/CI install scripts, configuring global.json paths.
   DO NOT USE FOR: system-wide SDK installs, .NET hosts older than 10, runtime-only
   installs, or projects not using SDK-style commands.
+  中文触发:本地安装指定版本 .NET SDK、不污染全局安装、预览版 SDK 测试。
 ---
 
 # setup-local-sdk

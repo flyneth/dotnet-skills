@@ -11,6 +11,7 @@ description: >
   DO NOT USE FOR: creating the project itself (use template-instantiation), finding or
   comparing templates (use template-discovery and template-comparison), authoring or
   validating custom templates (use template-authoring and template-validation).
+  中文触发:dotnet new 创建项目时自动补全参数默认值。
 license: MIT
 ---
 

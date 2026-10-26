@@ -9,6 +9,7 @@ description: >
   suppressions), fixing a handful of nullable warnings in code that already has NRTs enabled,
   suppressing warnings without fixing them, C# 7.3 or earlier projects.
   INVOKES: Get-NullableReadiness.ps1 scanner script.
+  中文触发:启用可空引用类型、修复 CS86xx 可空警告。
 license: MIT
 ---
 

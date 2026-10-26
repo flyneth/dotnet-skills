@@ -12,6 +12,7 @@ description: >
   and MapRazorComponents), Blazor WebAssembly or hosted Blazor WebAssembly apps
   (different migration path), apps that should stay on the Blazor Server hosting
   model without converting, or apps still targeting .NET Framework.
+  中文触发:把旧版 Blazor Server 升级为 Blazor Web App、迁移 _Host.cshtml、AddRazorComponents。
 ---
 
 # Convert Blazor Server App to Blazor Web App

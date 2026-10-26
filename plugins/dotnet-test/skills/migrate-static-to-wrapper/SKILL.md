@@ -12,6 +12,7 @@ description: >
   statics (detect-static-dependencies), choosing/designing a new wrapper
   (generate-testability-wrappers), behavior tests with no chosen seam
   (testability-obstacle), or test-framework migration.
+  中文触发:把静态调用(如 DateTime.Now/File)改成可测试的包装。
 license: MIT
 ---
 

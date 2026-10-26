@@ -11,6 +11,7 @@ description: >
   other dropped v3 TFMs. Still use it when packages say 3.x but migration
   source errors or legacy settings remain. Preserve VSTest/MTP. Do not use for
   a clean v3 project, v3-to-v4, framework conversion, or runner-only migration.
+  中文触发:MSTest v1/v2 升级到 v3、迁移 QualityTools 程序集引用。
 license: MIT
 ---
 

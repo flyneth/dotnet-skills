@@ -11,6 +11,7 @@ description: >
   discovery errors after a clean build; and MSTest.Sdk/MTP or vstest.console
   discovery changes. Do not use for v1/v2-to-v3 leftovers, framework
   conversion, runner-only migration, or a general .NET upgrade.
+  中文触发:MSTest 3 升级 4、v4 破坏性变更、升级后测试报错。
 license: MIT
 ---
 

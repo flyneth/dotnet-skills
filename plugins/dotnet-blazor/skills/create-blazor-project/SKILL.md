@@ -9,6 +9,7 @@ description: >
   setting up initial project structure.
   DO NOT USE FOR: adding features to existing projects, changing how an existing
   app renders, or component authoring (use author-component).
+  中文触发:新建 Blazor 网站或 Web 应用、脚手架 Web 项目。
 ---
 
 # Create a Blazor Web App

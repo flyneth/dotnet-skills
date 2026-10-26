@@ -10,6 +10,7 @@ description: >
   Xunit.Combinatorial/StaFact compatibility. Do not use for framework
   conversion or a runner-only migration. For xUnit v3 MTP filter syntax, also
   use migrate-vstest-to-mtp.
+  中文触发:xUnit v2 升级 v3、xunit.v3 迁移与修复。
 license: MIT
 ---
 

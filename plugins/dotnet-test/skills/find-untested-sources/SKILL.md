@@ -8,6 +8,7 @@ description: >
   Ruby, Kotlin, Swift, PowerShell, and C++. DO NOT USE FOR: real
   line/branch/Cobertura data, coverage-backed test priorities, CRAP risk, or
   grading existing tests.
+  中文触发:找没有测试覆盖的源码、哪些文件缺测试、建议测试位置。
 license: MIT
 ---
 

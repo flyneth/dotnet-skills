@@ -9,6 +9,7 @@ description: >
   Polyglot. DO NOT USE FOR: suite audits (test-engineer/test-anti-patterns),
   concrete fix/feature detection proof (test-value-evidence), writing/fixing
   tests, or coverage.
+  中文触发:给测试打分、评估单个测试的就绪度与质量。
 license: MIT
 ---
 

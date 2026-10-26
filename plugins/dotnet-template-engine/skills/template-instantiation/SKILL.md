@@ -13,6 +13,7 @@ description: >
   cross-parameter defaults such as which framework to pair with native AOT or whether to
   keep HTTPS when auth is enabled (use template-smart-defaults), modifying existing
   projects or adding NuGet packages to existing projects.
+  中文触发:用 dotnet new 从模板创建项目、带参数实例化模板。
 license: MIT
 ---
 

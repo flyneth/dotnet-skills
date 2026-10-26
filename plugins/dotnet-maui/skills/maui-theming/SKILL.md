@@ -12,6 +12,7 @@ description: >-
   documentation), app icons or splash screens (see .NET MAUI app icons
   documentation), or Bootstrap-style class theming (see Plugin.Maui.BootstrapTheme
   NuGet package).
+  中文触发:MAUI 主题、深浅色模式、AppThemeBinding、主题切换。
 license: MIT
 ---
 

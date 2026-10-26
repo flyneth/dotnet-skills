@@ -11,6 +11,7 @@ description: >-
   framework-specific lookup tables (test markers, assertion APIs, skip
   annotations, sleep patterns, mystery guest indicators, integration
   markers, setup/teardown, tag-support capability).
+  中文说明:测试分析类技能的参考文件目录(仅引用,不自行激活)。
 user-invocable: false
 disable-model-invocation: true
 license: MIT

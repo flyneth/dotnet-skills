@@ -9,6 +9,7 @@ description: >-
   to a user-named existing abstraction (migrate-static-to-wrapper). Use instead
   of general test generation when the requested test is impossible without a
   production edit and seam selection is still open.
+  中文触发:让依赖 DateTime/Random/File/Guid 的代码可测试、最小可测缝隙。
 license: MIT
 ---
 

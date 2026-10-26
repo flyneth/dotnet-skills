@@ -12,6 +12,7 @@ description: >-
   errors; use run-tests directly.
   Do not route hot-reload or migration requests here as the entry skill;
   mtp-hot-reload may use this skill internally for platform detection.
+  中文触发:识别项目用的测试平台和框架、VSTest 还是 MTP。
 license: MIT
 ---
 

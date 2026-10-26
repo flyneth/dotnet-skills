@@ -11,6 +11,7 @@ description: >
   PowerShell, and C++. DO NOT USE FOR a quick pragmatic test review (use
   test-anti-patterns), writing or running tests, framework migration, coverage,
   or assertion-diversity metrics.
+  中文触发:测试坏味道、test smell、按学术分类审查测试。
 license: MIT
 ---
 

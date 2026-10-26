@@ -11,6 +11,7 @@ description: >
   (detect-static-dependencies), migration to an existing/registered abstraction
   (migrate-static-to-wrapper), one blocked behavior plus deterministic tests
   (testability-obstacle), and general interface design.
+  中文触发:为难以测试的依赖生成可注入的包装接口。
 license: MIT
 ---
 

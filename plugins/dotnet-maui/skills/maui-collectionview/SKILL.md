@@ -14,6 +14,7 @@ description: >
   questions, platform-specific handler or renderer customization, diagnosing
   CollectionView bugs in the MAUI framework itself, or general MVVM/binding
   questions that merely happen to mention a list (use maui-data-binding).
+  中文触发:MAUI CollectionView 列表、分组、滚动、空视图、下拉刷新。
 license: MIT
 ---
 

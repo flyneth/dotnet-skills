@@ -13,6 +13,7 @@ description: >
   (use create-blazor-project), implementing a single individual component
   (use author-component), writing component code with parameters and
   EventCallback (use author-component), or simple single-component pages.
+  中文触发:规划复杂 Blazor 页面 UI、拆分布局与组件结构。
 ---
 
 # Plan a Blazor UI Change

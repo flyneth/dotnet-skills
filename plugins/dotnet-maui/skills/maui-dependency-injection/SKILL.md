@@ -11,6 +11,7 @@ description: >
   DO NOT USE FOR: data binding (use maui-data-binding), Shell route configuration
   (use maui-shell-navigation), unit-test mocking frameworks (use standard xUnit
   and NSubstitute patterns).
+  中文触发:MAUI 依赖注入、MauiProgram 服务注册、服务生命周期选择。
 license: MIT
 ---
 

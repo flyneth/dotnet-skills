@@ -11,6 +11,7 @@ description: >
   DO NOT USE FOR: finding or using existing templates (use template-discovery),
   creating projects from templates (use template-instantiation), creating templates
   from existing projects (use template-authoring).
+  中文触发:校验自定义 dotnet new 模板、发布前检查模板。
 license: MIT
 ---
 

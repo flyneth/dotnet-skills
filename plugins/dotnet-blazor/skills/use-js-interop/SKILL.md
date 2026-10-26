@@ -9,6 +9,7 @@ description: >
   IAsyncDisposable disposal of JS references, server-side JS interop safety.
   DO NOT USE FOR: general Blazor component authoring without JS interop needs
   (use author-component), forms (use collect-user-input).
+  中文触发:Blazor 调 JavaScript、JS 调 .NET、JS interop、IJSRuntime。
 ---
 
 # JS Interop in Blazor

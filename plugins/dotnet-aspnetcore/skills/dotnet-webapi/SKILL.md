@@ -9,6 +9,7 @@ description: >
   DO NOT USE FOR: general C# coding style, EF Core data access or query
   optimization (use optimizing-ef-core-queries), frontend/Blazor work, gRPC
   services, or SignalR hubs.
+  中文触发:创建或修改 Web API 接口、最小 API、控制器、OpenAPI/Swagger、.http 测试文件、全局错误处理。
 license: MIT
 ---
 

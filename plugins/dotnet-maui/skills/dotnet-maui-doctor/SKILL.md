@@ -9,6 +9,7 @@ description: >-
   after updates, or any MAUI toolchain issues. Do not use for: non-MAUI .NET projects,
   Xamarin.Forms apps, runtime app crashes unrelated to environment setup, or app store
   publishing issues. Works on macOS, Windows, and Linux.
+  中文触发:MAUI 环境问题诊断、SDK/workload/JDK/Android SDK/Xcode 检查与修复。
 license: MIT
 ---
 

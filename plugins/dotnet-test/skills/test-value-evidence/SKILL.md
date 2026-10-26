@@ -7,6 +7,7 @@ description: >-
   identified change: hypothetical mutations or general suite blind
   spots (test-gap-analysis). Also exclude per-test readiness/A-F grades (grade-tests),
   coverage (coverage-analysis), new suites (code-testing), or mutation engines.
+  中文触发:评估测试价值、证明测试能捕获回归、变更的回归测试审查。
 license: MIT
 ---
 

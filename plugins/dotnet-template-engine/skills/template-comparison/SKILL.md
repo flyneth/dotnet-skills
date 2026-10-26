@@ -9,6 +9,7 @@ description: >
   DO NOT USE FOR: creating a project from a template (use template-instantiation),
   authoring or validating custom templates (use template-authoring and template-validation),
   general single-template discovery (use template-discovery).
+  中文触发:对比多个 .NET 项目模板、该选哪个模板。
 license: MIT
 ---
 
