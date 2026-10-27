@@ -1,17 +1,15 @@
 ---
 name: migrate-mstest-v3-to-v4
 description: >
-  Use this skill before answering, planning, or editing any MSTest 3.x-to-4.x
-  upgrade or post-upgrade failure. Triggers include "MSTest v4 breaking
-  changes"; CS0507/CS0103/CS1061/CS1615; ExecuteAsync, CallerInfo, DisplayName,
-  or custom TestMethodAttribute; ClassCleanupBehavior; ContainsKey;
-  ThrowsExactly or ExpectedException; IsInstanceOfType out parameters;
-  TestTimeout.Infinite; ManagedType; net6/net7 compatibility; TestCase.Id
-  history; TestName in ClassInitialize; TreatDiscoveryWarningsAsErrors;
-  discovery errors after a clean build; and MSTest.Sdk/MTP or vstest.console
-  discovery changes. Do not use for v1/v2-to-v3 leftovers, framework
-  conversion, runner-only migration, or a general .NET upgrade.
-  中文触发:MSTest 3 升级 4、v4 破坏性变更、升级后测试报错。
+  Use this skill before answering, planning, or editing any MSTest 3.x-to-4.x upgrade or
+  post-upgrade failure. 中文触发:MSTest 3 升级 4、v4 破坏性变更、升级后测试报错。 Triggers include "MSTest v4 breaking
+  changes"; CS0507/CS0103/CS1061/CS1615; ExecuteAsync, CallerInfo, DisplayName, or custom
+  TestMethodAttribute; ClassCleanupBehavior; ContainsKey; ThrowsExactly or ExpectedException;
+  IsInstanceOfType out parameters; TestTimeout.Infinite; ManagedType; net6/net7 compatibility;
+  TestCase.Id history; TestName in ClassInitialize; TreatDiscoveryWarningsAsErrors; discovery
+  errors after a clean build; and MSTest.Sdk/MTP or vstest.console discovery changes. Do not use
+  for v1/v2-to-v3 leftovers, framework conversion, runner-only migration, or a general .NET
+  upgrade.
 license: MIT
 ---
 

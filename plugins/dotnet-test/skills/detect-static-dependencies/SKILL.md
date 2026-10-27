@@ -1,16 +1,12 @@
 ---
 name: detect-static-dependencies
 description: >
-  ACTIVATION PREREQUISITE: the request or discovered target must explicitly
-  identify C#, .NET, `.cs`, or `.csproj`; otherwise stay dormant without
-  invoking this skill. USE FOR: locating
-  System.DateTime.Now/UtcNow, System.IO.File/Directory, System.Environment,
-  HttpClient, Console, or Process usage in C#; auditing C# code for hard-to-test
-  framework dependencies; or verifying those C# calls are already abstracted.
-  DO NOT USE FOR: any target lacking the activation prerequisite; generating
-  wrappers (use generate-testability-wrappers); migrating code (use
-  migrate-static-to-wrapper); or general code review.
-  中文触发:检测 C# 静态依赖、静态方法难以测试。
+  ACTIVATION PREREQUISITE: the request or target must explicitly identify C#, .NET, `.cs`, or
+  `.csproj`; otherwise stay dormant. USE FOR: locating DateTime.Now/UtcNow, File/Directory,
+  Environment, HttpClient, Console, or Process usage in C#; auditing hard-to-test dependencies;
+  verifying those calls are abstracted. 中文触发:检测 C# 静态依赖、静态方法难以测试。 DO NOT USE FOR: targets lacking
+  the prerequisite; generating wrappers (generate-testability-wrappers); migrating code
+  (migrate-static-to-wrapper); general code review.
 license: MIT
 ---
 

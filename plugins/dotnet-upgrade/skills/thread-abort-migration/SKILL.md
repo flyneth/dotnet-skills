@@ -1,19 +1,15 @@
 ---
 name: thread-abort-migration
 description: >
-  Guides migration of .NET Framework Thread.Abort usage to cooperative cancellation
-  in modern .NET.
-  USE FOR: modernizing code that calls Thread.Abort, catching ThreadAbortException,
-  replacing Thread.ResetAbort, replacing Thread.Interrupt for thread termination,
-  resolving PlatformNotSupportedException or SYSLIB0006 after retargeting to .NET 6+,
-  migrating ASP.NET Response.End or Response.Redirect(url, true) which internally
-  call Thread.Abort.
-  DO NOT USE FOR: code that only uses Thread.Join, Thread.Sleep, or Thread.Start
-  without any abort, interrupt, or ThreadAbortException usage — these APIs work
-  identically in modern .NET and need no migration. Also not for projects staying
-  on .NET Framework, or Thread.Abort usage inside third-party libraries you do not
-  control.
-  中文触发:Thread.Abort 迁移、改用 CancellationToken 协作取消。
+  Guides migration of .NET Framework Thread.Abort usage to cooperative cancellation in modern
+  .NET. 中文触发:Thread.Abort 迁移、改用 CancellationToken 协作取消。 USE FOR: modernizing code that calls
+  Thread.Abort, catching ThreadAbortException, replacing Thread.ResetAbort, replacing
+  Thread.Interrupt for thread termination, resolving PlatformNotSupportedException or SYSLIB0006
+  after retargeting to .NET 6+, migrating ASP.NET Response.End or Response.Redirect(url, true)
+  which internally call Thread.Abort. DO NOT USE FOR: code that only uses Thread.Join,
+  Thread.Sleep, or Thread.Start without any abort, interrupt, or ThreadAbortException usage —
+  these APIs work identically in modern .NET and need no migration. Also not for projects staying
+  on .NET Framework, or Thread.Abort usage inside third-party libraries you do not control.
 license: MIT
 ---
 

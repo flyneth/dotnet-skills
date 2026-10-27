@@ -1,8 +1,7 @@
 ---
 license: MIT
 name: collect-user-input
-description: Build forms, validate data, and react to user input in Blazor. USE FOR adding forms, search boxes, filter panels, inline editing, data-entry UI, file uploads, validation (annotations or custom), handling form submissions, and binding input controls. Covers EditForm, built-in input components, DataAnnotationsValidator, custom validation, SSR form patterns (SupplyParameterFromForm, FormName, AntiforgeryToken, Enhance), and @bind for simple interactive controls. DO NOT USE for project scaffolding (see create-blazor-project) or prerendering issues (see support-prerendering).
-  中文触发:Blazor 表单、输入校验、EditForm、搜索框、文件上传、表单提交处理。
+description: Build forms, validate data, and react to user input in Blazor. 中文触发:Blazor 表单、输入校验、EditForm、搜索框、文件上传、表单提交处理。 USE FOR adding forms, search boxes, filter panels, inline editing, data-entry UI, file uploads, validation (annotations or custom), handling form submissions, and binding input controls. Covers EditForm, built-in input components, DataAnnotationsValidator, custom validation, SSR form patterns (SupplyParameterFromForm, FormName, AntiforgeryToken, Enhance), and @bind for simple interactive controls. DO NOT USE for project scaffolding (see create-blazor-project) or prerendering issues (see support-prerendering).
 ---
 
 # Collect User Input

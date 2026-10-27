@@ -1,15 +1,13 @@
 ---
 name: scaffold-dotnet-test-project
 description: >-
-  MUST USE when an existing .NET test project was excluded from a .slnf/CI
-  solution filter, disappeared from .sln/.slnx discovery, or lost its production
-  ProjectReference; also for requests to set up, create, reuse, add, register,
-  include, or repair a test project. Handles "tests pass directly but CI
-  discovers zero", exact solution wiring, xUnit/NUnit/MSTest, and central
-  packages. DO NOT USE to only author tests in an already-wired project
-  (code-testing), run tests, migrate, or correct MSTest syntax/configuration
-  without changing project or CI files (writing-mstest-tests).
-  中文触发:测试项目从解决方案里丢了、重建测试项目、加回 .slnf/CI。
+  MUST USE when an existing .NET test project was excluded from a .slnf/CI solution filter,
+  disappeared from .sln/.slnx discovery, or lost its production ProjectReference; also to set up,
+  create, reuse, add, register, include, or repair a test project. Handles "tests pass directly
+  but CI discovers zero", exact solution wiring, xUnit/NUnit/MSTest, and central packages.
+  中文触发:测试项目从解决方案里丢了、重建测试项目、加回 .slnf/CI。 DO NOT USE to only author tests in an already-wired
+  project (code-testing), run tests, migrate, or correct MSTest syntax/configuration without
+  changing project or CI files (writing-mstest-tests).
 license: MIT
 metadata:
   portability: portable

@@ -2,14 +2,13 @@
 name: setup-local-sdk
 license: MIT
 description: >
-  Install a .NET SDK locally for safe preview testing, specific-version pinning, or
-  reproducible team setups — without modifying the system-wide installation.
-  USE FOR: trying .NET previews safely, testing specific SDK versions, installing MAUI
-  or other workloads on a preview, updating or replacing an existing local SDK,
-  creating reproducible team/CI install scripts, configuring global.json paths.
-  DO NOT USE FOR: system-wide SDK installs, .NET hosts older than 10, runtime-only
-  installs, or projects not using SDK-style commands.
-  中文触发:本地安装指定版本 .NET SDK、不污染全局安装、预览版 SDK 测试。
+  Install a .NET SDK locally for safe preview testing, specific-version pinning, or reproducible
+  team setups — without modifying the system-wide installation. USE FOR: trying .NET previews
+  safely, testing specific SDK versions, installing MAUI or other workloads on a preview, updating
+  or replacing an existing local SDK, creating reproducible team/CI install scripts, configuring
+  global.json paths. 中文触发:本地安装指定版本 .NET SDK、不污染全局安装、预览版 SDK 测试。 DO NOT USE FOR: system-wide SDK
+  installs, .NET hosts older than 10, runtime-only installs, or projects not using SDK-style
+  commands.
 ---
 
 # setup-local-sdk

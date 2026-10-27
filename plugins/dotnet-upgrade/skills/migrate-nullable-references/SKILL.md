@@ -1,15 +1,14 @@
 ---
 name: migrate-nullable-references
 description: >
-  Enable nullable reference types in a C# project and systematically resolve all warnings.
-  USE FOR: adopting NRTs in existing codebases, file-by-file or project-wide migration,
-  fixing CS8602/CS8618/CS86xx warnings, annotating APIs for nullability, cleaning up
-  null-forgiving operators, upgrading dependencies with new nullable annotations.
+  Enable nullable reference types in a C# project and systematically resolve all warnings. USE
+  FOR: adopting NRTs in existing codebases, file-by-file or project-wide migration, fixing
+  CS8602/CS8618/CS86xx warnings, annotating APIs for nullability, cleaning up null-forgiving
+  operators, upgrading dependencies with new nullable annotations. 中文触发:启用可空引用类型、修复 CS86xx 可空警告。
   DO NOT USE FOR: projects already fully migrated with zero warnings (unless auditing
   suppressions), fixing a handful of nullable warnings in code that already has NRTs enabled,
-  suppressing warnings without fixing them, C# 7.3 or earlier projects.
-  INVOKES: Get-NullableReadiness.ps1 scanner script.
-  中文触发:启用可空引用类型、修复 CS86xx 可空警告。
+  suppressing warnings without fixing them, C# 7.3 or earlier projects. INVOKES:
+  Get-NullableReadiness.ps1 scanner script.
 license: MIT
 ---
 

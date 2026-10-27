@@ -1,6 +1,6 @@
 ---
 name: directory-build-organization
-description: "USE ONLY for (1) two or more projects with repeated MSBuild policy, targets, or package versions, or (2) an existing Directory.Build.props/targets/rsp hierarchy with an import, placement, or layering defect. A one-project repo without an existing Directory.Build file is outside scope; do not load this skill. Covers centralizing shared policy and targets, Directory.Packages.props across projects, parent hierarchy/import structure, props-versus-targets placement, and folder/project exceptions. An existing hierarchy defect remains in scope when only one project is affected. For property value or condition semantics use property-patterns. Exclude legacy-to-SDK migration and non-MSBuild systems. 中文触发:多个项目重复的构建配置收敛、Directory.Build.props/targets 组织。"
+description: "USE ONLY for (1) two or more projects with repeated MSBuild policy, targets, or package versions, or (2) an existing Directory.Build.props/targets/rsp hierarchy with an import, placement, or layering defect. 中文触发:多个项目收敛构建配置、Directory.Build.props/targets 组织。 One project without an existing Directory.Build file is out of scope. Covers centralizing shared policy and targets, Directory.Packages.props across projects, parent hierarchy/import structure, props-versus-targets placement, folder/project exceptions. A hierarchy defect remains in scope when one project is affected. For property semantics use property-patterns; exclude legacy-to-SDK migration and non-MSBuild systems."
 license: MIT
 ---
 

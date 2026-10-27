@@ -1,13 +1,12 @@
 ---
 name: clr-activation-debugging
 description: >-
-  Diagnoses .NET Framework CLR activation issues using CLR activation logs
-  (CLRLoad logs) produced by mscoree.dll. Use when: the shim picks the wrong
-  runtime, fails to load any runtime, shows unexpected .NET 3.5 Feature-on-Demand
-  (FOD) dialogs, unexpectedly does NOT show FOD dialogs, loads both v2 and v4
-  into the same process causing failures, or any time someone is wondering
-  "what is happening with .NET Framework activation?"
-  中文触发:.NET Framework CLR 加载失败、运行时版本选错、CLRLoad 日志。
+  Diagnoses .NET Framework CLR activation issues using CLR activation logs (CLRLoad logs) produced
+  by mscoree.dll. 中文触发:.NET Framework CLR 加载失败、运行时版本选错、CLRLoad 日志。 Use when: the shim picks the
+  wrong runtime, fails to load any runtime, shows unexpected .NET 3.5 Feature-on-Demand (FOD)
+  dialogs, unexpectedly does NOT show FOD dialogs, loads both v2 and v4 into the same process
+  causing failures, or any time someone is wondering "what is happening with .NET Framework
+  activation?"
 license: MIT
 ---
 

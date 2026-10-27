@@ -1,15 +1,13 @@
 ---
 name: grade-tests
 description: >
-  Grade curated individual tests for readiness, A-F quality and improvements.
-  ALWAYS USE FOR: grade tests, review only a named test, per-test readiness or
-  quality bands for supplied methods, bodies, file spans or bounded PR diffs,
-  including existing tests. Return Pass/Failed/Uncertain/Not applicable;
-  unresolved/empty scopes omit grades. Compose read-only per-test evidence.
-  Polyglot. DO NOT USE FOR: suite audits (test-engineer/test-anti-patterns),
-  concrete fix/feature detection proof (test-value-evidence), writing/fixing
-  tests, or coverage.
-  中文触发:给测试打分、评估单个测试的就绪度与质量。
+  Grade curated individual tests for readiness, A-F quality and improvements. ALWAYS USE FOR:
+  grade tests, review only a named test, per-test readiness or quality bands for supplied methods,
+  bodies, file spans or bounded PR diffs, including existing tests. Return
+  Pass/Failed/Uncertain/Not applicable; unresolved/empty scopes omit grades. Compose read-only
+  per-test evidence. Polyglot. 中文触发:给测试打分、评估单个测试的就绪度与质量。 DO NOT USE FOR: suite audits
+  (test-engineer/test-anti-patterns), concrete fix/feature proof (test-value-evidence),
+  writing/fixing tests, or coverage.
 license: MIT
 ---
 

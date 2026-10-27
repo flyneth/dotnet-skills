@@ -1,15 +1,13 @@
 ---
 name: winforms-expert
 description: >-
-  Create, modify, debug, or review Windows Forms applications only when the request
-  contains a concrete Windows Forms marker. USE FOR: WinForms, Windows Forms,
-  System.Windows.Forms, WinForms Form or UserControl designer files (*.Designer.cs or
-  *.Designer.vb), Visual Studio WinForms Designer, TableLayoutPanel, BindingSource,
-  DataGridView, Control.InvokeAsync, component-tray ownership, or custom control
-  serialization. DO NOT USE FOR: WPF or WPF XAML, including Window.InputBindings,
-  KeyBinding, commands, or DataContext; .NET MAUI; Avalonia; or any request where none
-  of the listed Windows Forms markers is present.
-  中文触发:WinForms 窗体应用、Windows Forms 开发调试与审查。
+  Create, modify, debug, or review Windows Forms applications only when the request contains a
+  concrete Windows Forms marker. USE FOR: WinForms, Windows Forms, System.Windows.Forms, WinForms
+  Form or UserControl designer files (*.Designer.cs or *.Designer.vb), Visual Studio WinForms
+  Designer, TableLayoutPanel, BindingSource, DataGridView, Control.InvokeAsync, component-tray
+  ownership, or custom control serialization. 中文触发:WinForms 窗体应用、Windows Forms 开发调试与审查。 DO NOT USE
+  FOR: WPF or WPF XAML, including Window.InputBindings, KeyBinding, commands, or DataContext; .NET
+  MAUI; Avalonia; or any request where none of the listed Windows Forms markers is present.
 license: MIT
 ---
 

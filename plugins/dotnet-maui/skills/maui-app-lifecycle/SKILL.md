@@ -1,17 +1,14 @@
 ---
 name: maui-app-lifecycle
 description: >-
-  .NET MAUI app lifecycle guidance — the four app states, cross-platform Window
-  lifecycle events (Created, Activated, Deactivated, Stopped, Resumed, Destroying),
-  platform-specific lifecycle mapping, backgrounding and resume behavior, and
-  state-preservation patterns.
-  USE FOR: "app lifecycle", "window lifecycle events", "save state on background",
-  "resume app", "OnStopped", "OnResumed", "backgrounding", "deactivated event",
-  "ConfigureLifecycleEvents", "platform lifecycle hooks".
-  DO NOT USE FOR: navigation events (use maui-shell-navigation),
-  dependency injection setup (use maui-dependency-injection),
-  platform API invocation (use conditional compilation and partial classes).
-  中文触发:MAUI 应用生命周期、窗口事件、前后台切换。
+  .NET MAUI app lifecycle guidance — the four app states, cross-platform Window lifecycle events
+  (Created, Activated, Deactivated, Stopped, Resumed, Destroying), platform-specific lifecycle
+  mapping, backgrounding and resume behavior, and state-preservation patterns. 中文触发:MAUI
+  应用生命周期、窗口事件、前后台切换。 USE FOR: "app lifecycle", "window lifecycle events", "save state on
+  background", "resume app", "OnStopped", "OnResumed", "backgrounding", "deactivated event",
+  "ConfigureLifecycleEvents", "platform lifecycle hooks". DO NOT USE FOR: navigation events (use
+  maui-shell-navigation), dependency injection setup (use maui-dependency-injection), platform API
+  invocation (use conditional compilation and partial classes).
 license: MIT
 ---
 

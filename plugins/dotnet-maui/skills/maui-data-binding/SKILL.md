@@ -1,19 +1,16 @@
 ---
 name: maui-data-binding
 description: >-
-  Guidance for .NET MAUI XAML and C# data bindings — compiled bindings,
-  INotifyPropertyChanged / ObservableObject, value converters, binding modes,
-  multi-binding, relative bindings, fallbacks, and MVVM best practices.
-  USE FOR: setting up compiled bindings with x:DataType, implementing
-  INotifyPropertyChanged or CommunityToolkit ObservableObject, creating
-  IValueConverter / IMultiValueConverter, choosing binding modes, configuring
-  BindingContext, relative bindings, binding fallbacks, StringFormat,
-  code-behind SetBinding with lambdas, and enforcing XC0022/XC0025 warnings.
-  DO NOT USE FOR: CollectionView item templates and layouts (use
-  maui-collectionview), Shell navigation data passing (use
-  maui-shell-navigation), dependency injection (use maui-dependency-injection),
-  or animations triggered by property changes (use .NET MAUI animation APIs).
-  中文触发:MAUI 数据绑定、INotifyPropertyChanged、值转换器、绑定模式。
+  Guidance for .NET MAUI XAML and C# data bindings — compiled bindings, INotifyPropertyChanged /
+  ObservableObject, value converters, binding modes, multi-binding, relative bindings, fallbacks,
+  and MVVM best practices. 中文触发:MAUI 数据绑定、INotifyPropertyChanged、值转换器、绑定模式。 USE FOR: setting up
+  compiled bindings with x:DataType, implementing INotifyPropertyChanged or CommunityToolkit
+  ObservableObject, creating IValueConverter / IMultiValueConverter, choosing binding modes,
+  configuring BindingContext, relative bindings, binding fallbacks, StringFormat, code-behind
+  SetBinding with lambdas, and enforcing XC0022/XC0025 warnings. DO NOT USE FOR: CollectionView
+  item templates and layouts (use maui-collectionview), Shell navigation data passing (use
+  maui-shell-navigation), dependency injection (use maui-dependency-injection), or animations
+  triggered by property changes (use .NET MAUI animation APIs).
 license: MIT
 ---
 

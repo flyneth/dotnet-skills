@@ -4,16 +4,15 @@ name: coordinate-components
 description: >
   Share state between components that don't have a direct parent-child parameter relationship,
   using cascading values, scoped services with change events, or CascadingValueSource via DI.
-  USE WHEN the user needs a CascadingParameter or CascadingValue that works across render mode
-  boundaries, a shopping cart or notification count accessible from multiple pages, a theme or
-  user preference cascaded app-wide, or when components in different parts of the tree must
-  react when shared data changes. Also USE WHEN cascading values aren't reaching interactive
-  children in per-page interactivity mode, or when the user needs to understand scoped vs
-  singleton service lifetime for state on Blazor Server.
-  DO NOT USE for direct parent-child parameter passing or EventCallback (see author-component),
-  for persisting state across prerender-to-interactive transitions (see support-prerendering),
-  or for service abstractions for data fetching in Auto/WebAssembly (see fetch-and-send-data).
-  中文触发:Blazor 组件间共享状态、级联值 CascadingValue、作用域服务、非父子组件通信。
+  中文触发:Blazor 组件间共享状态、级联值 CascadingValue、作用域服务、非父子组件通信。 USE WHEN the user needs a
+  CascadingParameter or CascadingValue across render mode boundaries, a shopping cart or
+  notification count on multiple pages, a theme or user preference cascaded app-wide, or
+  components in different tree parts reacting to shared data changes. Also USE WHEN cascading
+  values aren't reaching interactive children in per-page interactivity mode, or to understand
+  scoped vs singleton service lifetime for state on Blazor Server. DO NOT USE for direct
+  parent-child parameter passing or EventCallback (author-component), persisting state across
+  prerender-to-interactive transitions (support-prerendering), or data-fetching service
+  abstractions in Auto/WebAssembly (fetch-and-send-data).
 ---
 
 # Coordinate Components

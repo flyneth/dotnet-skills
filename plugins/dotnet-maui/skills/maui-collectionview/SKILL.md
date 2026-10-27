@@ -1,20 +1,17 @@
 ---
 name: maui-collectionview
 description: >
-  Guidance for implementing CollectionView in .NET MAUI apps — data display,
-  layouts (list & grid), selection, grouping, scrolling, empty views, templates,
-  incremental loading, swipe actions, and pull-to-refresh.
-  USE FOR: "CollectionView", "list view", "grid layout", "data template",
-  "item template", "grouping", "pull to refresh", "incremental loading",
-  "swipe actions", "empty view", "selection mode", "scroll to item",
-  displaying scrollable data, replacing ListView.
-  DO NOT USE FOR: simple static layouts without scrollable data (use Grid or
-  StackLayout), map pin lists (use Microsoft.Maui.Controls.Maps), table-based
-  data entry forms, non-MAUI list controls, CarouselView or BindableLayout
-  questions, platform-specific handler or renderer customization, diagnosing
-  CollectionView bugs in the MAUI framework itself, or general MVVM/binding
-  questions that merely happen to mention a list (use maui-data-binding).
-  中文触发:MAUI CollectionView 列表、分组、滚动、空视图、下拉刷新。
+  Guidance for implementing CollectionView in .NET MAUI apps — data display, layouts (list &
+  grid), selection, grouping, scrolling, empty views, templates, incremental loading, swipe
+  actions, and pull-to-refresh. 中文触发:MAUI CollectionView 列表、分组、滚动、空视图、下拉刷新。 USE FOR:
+  "CollectionView", "list view", "grid layout", "data template", "item template", "grouping",
+  "pull to refresh", "incremental loading", "swipe actions", "empty view", "selection mode",
+  "scroll to item", displaying scrollable data, replacing ListView. DO NOT USE FOR: simple static
+  layouts without scrollable data (use Grid or StackLayout), map pin lists (use
+  Microsoft.Maui.Controls.Maps), table-based data entry forms, non-MAUI list controls,
+  CarouselView or BindableLayout questions, platform-specific handler or renderer customization,
+  diagnosing CollectionView bugs in the MAUI framework itself, or general MVVM/binding questions
+  that merely happen to mention a list (use maui-data-binding).
 license: MIT
 ---
 

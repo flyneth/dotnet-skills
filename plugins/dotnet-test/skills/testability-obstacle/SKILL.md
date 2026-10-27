@@ -2,14 +2,12 @@
 name: testability-obstacle
 description: >-
   MUST USE for C#/.NET deterministic tests that require the smallest production seam for
-  DateTime/Task.Delay/File/Environment/Guid/Random, static API preservation,
-  nested/parallel overrides, or no real I/O. USE ONLY when the target workspace
-  contains C# source plus a .csproj or .sln. DO NOT USE for audits, bulk
-  migration, code that already has an injectable seam, or an explicit migration
-  to a user-named existing abstraction (migrate-static-to-wrapper). Use instead
-  of general test generation when the requested test is impossible without a
-  production edit and seam selection is still open.
-  中文触发:让依赖 DateTime/Random/File/Guid 的代码可测试、最小可测缝隙。
+  DateTime/Task.Delay/File/Environment/Guid/Random, static API preservation, nested/parallel
+  overrides, or no real I/O. USE ONLY when the workspace contains C# source plus a .csproj or
+  .sln. 中文触发:让依赖 DateTime/Random/File/Guid 的代码可测试、最小可测缝隙。 DO NOT USE for audits, bulk migration,
+  code that already has an injectable seam, or migration to a user-named abstraction
+  (migrate-static-to-wrapper). Use instead of general test generation when the requested test is
+  impossible without a production edit and seam selection is open.
 license: MIT
 ---
 

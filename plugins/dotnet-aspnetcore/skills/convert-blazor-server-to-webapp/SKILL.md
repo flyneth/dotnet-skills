@@ -2,17 +2,15 @@
 name: convert-blazor-server-to-webapp
 license: MIT
 description: >
-  Guides conversion of a pre-.NET 8 Blazor Server app into a .NET 8+ Blazor Web App.
-  USE FOR: migrating apps that use AddServerSideBlazor and MapBlazorHub to the
-  AddRazorComponents/MapRazorComponents model, converting _Host.cshtml to an App.razor
-  root component, replacing blazor.server.js with blazor.web.js, migrating
-  CascadingAuthenticationState to a service, adopting new Blazor Web App features
-  like enhanced navigation and streaming rendering.
-  DO NOT USE FOR: apps that are already Blazor Web Apps (already use AddRazorComponents
-  and MapRazorComponents), Blazor WebAssembly or hosted Blazor WebAssembly apps
-  (different migration path), apps that should stay on the Blazor Server hosting
-  model without converting, or apps still targeting .NET Framework.
-  中文触发:把旧版 Blazor Server 升级为 Blazor Web App、迁移 _Host.cshtml、AddRazorComponents。
+  Guides conversion of a pre-.NET 8 Blazor Server app into a .NET 8+ Blazor Web App. 中文触发:把旧版
+  Blazor Server 升级为 Blazor Web App、迁移 _Host.cshtml、AddRazorComponents。 USE FOR: migrating apps
+  that use AddServerSideBlazor and MapBlazorHub to the AddRazorComponents/MapRazorComponents
+  model, converting _Host.cshtml to an App.razor root component, replacing blazor.server.js with
+  blazor.web.js, migrating CascadingAuthenticationState to a service, adopting new Blazor Web App
+  features like enhanced navigation and streaming rendering. DO NOT USE FOR: apps that are already
+  Blazor Web Apps (already use AddRazorComponents and MapRazorComponents), Blazor WebAssembly or
+  hosted Blazor WebAssembly apps (different migration path), apps that should stay on the Blazor
+  Server hosting model without converting, or apps still targeting .NET Framework.
 ---
 
 # Convert Blazor Server App to Blazor Web App

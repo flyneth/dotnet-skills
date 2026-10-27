@@ -1,14 +1,13 @@
 ---
 name: migrate-xunit-to-mstest
 description: >
-  Convert .NET tests from xUnit.net v2/v3 to MSTest v4 while preserving VSTest
-  or MTP. Use for replacing xunit packages, Fact/Theory/InlineData/MemberData,
-  assertions, IClassFixture/ICollectionFixture, ITestOutputHelper, TestContext
-  cancellation, traits/Owner, skips, timeouts, and xUnit parallelization. Also
-  use when a "convert xUnit to MSTest" request may already be migrated: inspect
-  and report the no-op. Do not use for xUnit v2-to-v3, MSTest upgrades,
-  NUnit/TUnit conversion, or runner-only VSTest-to-MTP migration.
-  中文触发:xUnit 迁移到 MSTest、Fact/Theory/InlineData 转换。
+  Convert .NET tests from xUnit.net v2/v3 to MSTest v4 while preserving VSTest or MTP. Use for
+  replacing xunit packages, Fact/Theory/InlineData/MemberData, assertions,
+  IClassFixture/ICollectionFixture, ITestOutputHelper, TestContext cancellation, traits/Owner,
+  skips, timeouts, and xUnit parallelization. Also use when a "convert xUnit to MSTest" request
+  may already be migrated: inspect and report the no-op. 中文触发:xUnit 迁移到
+  MSTest、Fact/Theory/InlineData 转换。 Do not use for xUnit v2-to-v3, MSTest upgrades, NUnit/TUnit
+  conversion, or runner-only VSTest-to-MTP migration.
 license: MIT
 ---
 

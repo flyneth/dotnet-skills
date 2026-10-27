@@ -1,15 +1,13 @@
 ---
 name: dotnet-pinvoke
 description: >
-  Correctly call native (C/C++) libraries from .NET using P/Invoke and LibraryImport.
-  Covers function signatures, string marshalling, memory lifetime, SafeHandle, and
-  cross-platform patterns.
-  USE FOR: writing new P/Invoke or LibraryImport declarations, reviewing or debugging
-  existing native interop code, wrapping a C or C++ library for use in .NET, diagnosing
-  crashes, memory leaks, or corruption at the managed/native boundary.
-  DO NOT USE FOR: COM interop, C++/CLI mixed-mode assemblies, or pure managed code with
-  no native dependencies.
-  中文触发:P/Invoke、LibraryImport、调用 C/C++ 原生库、DllImport、字符串封送、托管与非托管边界的崩溃或内存泄漏。
+  Correctly call native (C/C++) libraries from .NET using P/Invoke and LibraryImport. Covers
+  function signatures, string marshalling, memory lifetime, SafeHandle, and cross-platform
+  patterns. USE FOR: writing new P/Invoke or LibraryImport declarations, reviewing or debugging
+  existing native interop code, wrapping a C or C++ library for use in .NET, diagnosing crashes,
+  memory leaks, or corruption at the managed/native boundary. 中文触发:P/Invoke、LibraryImport、调用 C/C++
+  原生库、DllImport、字符串封送、托管与非托管边界的崩溃或内存泄漏。 DO NOT USE FOR: COM interop, C++/CLI mixed-mode
+  assemblies, or pure managed code with no native dependencies.
 license: MIT
 ---
 

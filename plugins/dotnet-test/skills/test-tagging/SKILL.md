@@ -1,15 +1,12 @@
 ---
 name: test-tagging
 description: >
-  Classifies existing tests by standard traits and reports their distribution.
-  USE FOR: tagging all tests with category attributes, categorizing/tagging/
-  labeling each
-  test, compare happy vs error paths, audit the test mix, describe coverage shape
-  by test type, or tag then verify the project builds. Read bodies when names
-  mislead. Apply canonical attributes; otherwise report only. DO NOT USE FOR:
-  requests owned by test-anti-patterns, coverage-analysis, crap-score,
-  test-gap-analysis, code-testing, or migration skills.
-  中文触发:给测试分类打标签、统计测试特征分布。
+  Classify existing tests by standard traits and report their distribution. USE FOR: tagging all
+  tests with category attributes, categorizing/labeling each test, compare happy vs error paths,
+  audit the test mix, describe coverage shape by test type, or tag then verify the project builds.
+  Read bodies when names mislead. Apply canonical attributes; otherwise report only.
+  中文触发:给测试分类打标签、统计测试特征分布。 DO NOT USE FOR: requests owned by test-anti-patterns, coverage-analysis,
+  crap-score, test-gap-analysis, code-testing, or migration skills.
 license: MIT
 ---
 

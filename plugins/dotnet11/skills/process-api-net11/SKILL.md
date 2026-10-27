@@ -1,12 +1,12 @@
 ---
 name: process-api-net11
 description: >
-  Provides guidance on the new System.Diagnostics.Process APIs introduced in .NET 11:
-  Process.Run, Process.RunAndCaptureText, Process.StartAndForget, Process.ReadAllText/Bytes/Lines,
-  KillOnParentExit, InheritedHandles, and StartDetached.
-  USE FOR: starting, orchestrating, or capturing output from external processes in applications targeting net11.0 or later.
-  DO NOT USE FOR: applications targeting .NET 10 or earlier, or basic pre-.NET 11 Process.Start usage without new APIs.
-  中文触发:.NET 11 新 Process API、Process.Run、StartAndForget。
+  Provides guidance on the new System.Diagnostics.Process APIs introduced in .NET 11: Process.Run,
+  Process.RunAndCaptureText, Process.StartAndForget, Process.ReadAllText/Bytes/Lines,
+  KillOnParentExit, InheritedHandles, and StartDetached. USE FOR: starting, orchestrating, or
+  capturing output from external processes in applications targeting net11.0 or later. 中文触发:.NET
+  11 新 Process API、Process.Run、StartAndForget。 DO NOT USE FOR: applications targeting .NET 10 or
+  earlier, or basic pre-.NET 11 Process.Start usage without new APIs.
 license: MIT
 ---
 

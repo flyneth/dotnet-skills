@@ -1,18 +1,14 @@
 ---
 name: platform-detection
 description: >-
-  Identify a .NET project's test platform, framework, command mode, and
-  SDK-style vs classic project system. Use only for "which test
-  platform/framework?", "VSTest or MTP?", or "what runner does this project
-  use?", including bridge settings, UseVSTest opt-outs, and incompatible or
-  conflicting VSTest/MTP configuration. Resolves global.json, project,
-  packages.config, Directory.Build.props, and Directory.Packages.props
-  precedence for MSTest/xUnit/NUnit/TUnit. DO NOT USE when the user asks to
-  run/filter tests or for commands, flags, TRX/dumps, or test-command/filter
-  errors; use run-tests directly.
-  Do not route hot-reload or migration requests here as the entry skill;
-  mtp-hot-reload may use this skill internally for platform detection.
-  中文触发:识别项目用的测试平台和框架、VSTest 还是 MTP。
+  Identify a .NET project's test platform, framework, command mode, and SDK-style vs classic
+  project system. 中文触发:识别测试平台和框架、VSTest 还是 MTP。 Use only for "which test platform/framework?",
+  "VSTest or MTP?", or "what runner does this project use?", including bridge settings, UseVSTest
+  opt-outs, and conflicting VSTest/MTP configuration. Resolves global.json, project,
+  packages.config, Directory.Build.props, and Directory.Packages.props precedence for
+  MSTest/xUnit/NUnit/TUnit. DO NOT USE for running/filtering tests or commands, flags, TRX/dumps,
+  or test-command errors (run-tests); not the entry skill for hot reload or migration
+  (mtp-hot-reload uses this internally).
 license: MIT
 ---
 

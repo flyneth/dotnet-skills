@@ -1,17 +1,15 @@
 ---
 name: template-validation
 description: >
-  Validates custom dotnet new templates for correctness before publishing.
-  Catches missing fields, parameter bugs, shortName conflicts, constraint issues,
-  and common authoring mistakes that cause templates to fail silently.
-  USE FOR: checking template.json files for errors before publishing or testing,
-  diagnosing why a template doesn't appear after installation, reviewing template
-  parameter definitions for type mismatches and missing defaults, finding shortName
-  conflicts with dotnet CLI commands, validating post-action and constraint configuration.
-  DO NOT USE FOR: finding or using existing templates (use template-discovery),
-  creating projects from templates (use template-instantiation), creating templates
-  from existing projects (use template-authoring).
-  中文触发:校验自定义 dotnet new 模板、发布前检查模板。
+  Validates custom dotnet new templates for correctness before publishing. 中文触发:校验自定义 dotnet new
+  模板、发布前检查模板。 Catches missing fields, parameter bugs, shortName conflicts, constraint issues, and
+  common authoring mistakes that cause templates to fail silently. USE FOR: checking template.json
+  files for errors before publishing or testing, diagnosing why a template doesn't appear after
+  installation, reviewing template parameter definitions for type mismatches and missing defaults,
+  finding shortName conflicts with dotnet CLI commands, validating post-action and constraint
+  configuration. DO NOT USE FOR: finding or using existing templates (use template-discovery),
+  creating projects from templates (use template-instantiation), creating templates from existing
+  projects (use template-authoring).
 license: MIT
 ---
 

@@ -1,18 +1,16 @@
 ---
 name: migrate-static-to-wrapper
 description: >
-  ALWAYS USE when asked to migrate, replace, or make testable existing C# static
-  calls with a named wrapper or built-in abstraction: DateTime.UtcNow/Now or
-  DateTimeOffset.UtcNow to TimeProvider/IClock, File.* to IFileSystem or an
-  existing store such as ITextFileStore, and Environment.* to an existing reader
-  such as IEnvironmentReader. Covers scoped files/projects, constructor
-  injection, replacing temp-file or process-environment tests with fakes,
-  "already registered" abstractions, and static classes whose callers/signatures
-  must stay unchanged. Preserves DateTimeKind and call count. DO NOT USE for finding
-  statics (detect-static-dependencies), choosing/designing a new wrapper
-  (generate-testability-wrappers), behavior tests with no chosen seam
-  (testability-obstacle), or test-framework migration.
-  中文触发:把静态调用(如 DateTime.Now/File)改成可测试的包装。
+  ALWAYS USE when asked to migrate, replace, or make testable existing C# static calls with a
+  named wrapper or built-in abstraction: DateTime.UtcNow/Now or DateTimeOffset.UtcNow to
+  TimeProvider/IClock, File.* to IFileSystem or an existing store such as ITextFileStore,
+  Environment.* to an existing reader such as IEnvironmentReader. 中文触发:把静态调用(如
+  DateTime.Now/File)改成可测试包装。 Covers scoped files/projects, constructor injection, replacing
+  temp-file or process-environment tests with fakes, "already registered" abstractions, and static
+  classes whose callers/signatures must stay unchanged. Preserves DateTimeKind and call count. DO
+  NOT USE for finding statics (detect-static-dependencies), designing a new wrapper
+  (generate-testability-wrappers), behavior tests with no chosen seam (testability-obstacle), or
+  test-framework migration.
 license: MIT
 ---
 

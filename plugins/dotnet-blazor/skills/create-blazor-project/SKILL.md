@@ -2,14 +2,12 @@
 license: MIT
 name: create-blazor-project
 description: >
-  Create a new ASP.NET Core web application or web site using Blazor.
-  USE FOR: creating a new Blazor web app, scaffolding a new web project,
-  starting a new web site, choosing render modes (Static SSR, Interactive Server,
-  Interactive WebAssembly, Auto), running dotnet new blazor with the right options,
-  setting up initial project structure.
-  DO NOT USE FOR: adding features to existing projects, changing how an existing
-  app renders, or component authoring (use author-component).
-  中文触发:新建 Blazor 网站或 Web 应用、脚手架 Web 项目。
+  Create a new ASP.NET Core web application or web site using Blazor. USE FOR: creating a new
+  Blazor web app, scaffolding a new web project, starting a new web site, choosing render modes
+  (Static SSR, Interactive Server, Interactive WebAssembly, Auto), running dotnet new blazor with
+  the right options, setting up initial project structure. 中文触发:新建 Blazor 网站或 Web 应用、脚手架 Web 项目。
+  DO NOT USE FOR: adding features to existing projects, changing how an existing app renders, or
+  component authoring (use author-component).
 ---
 
 # Create a Blazor Web App

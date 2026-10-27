@@ -1,18 +1,15 @@
 ---
 name: maui-theming
 description: >-
-  Guide for theming .NET MAUI apps — light/dark mode via AppThemeBinding,
-  ResourceDictionary theme switching, DynamicResource bindings, system theme
-  detection, and user theme preferences.
-  Use when: "dark mode", "light mode", "theming", "AppThemeBinding",
-  "theme switching", "ResourceDictionary theme", "dynamic resources",
-  "system theme detection", "color scheme", "app theme", "DynamicResource".
-  Do not use for: localization or language switching (see .NET MAUI localization
-  documentation), accessibility visual adjustments (see .NET MAUI accessibility
-  documentation), app icons or splash screens (see .NET MAUI app icons
-  documentation), or Bootstrap-style class theming (see Plugin.Maui.BootstrapTheme
+  Guide for theming .NET MAUI apps — light/dark mode via AppThemeBinding, ResourceDictionary theme
+  switching, DynamicResource bindings, system theme detection, and user theme preferences. Use
+  when: "dark mode", "light mode", "theming", "AppThemeBinding", "theme switching",
+  "ResourceDictionary theme", "dynamic resources", "system theme detection", "color scheme", "app
+  theme", "DynamicResource". 中文触发:MAUI 主题、深浅色模式、AppThemeBinding、主题切换。 Do not use for: localization
+  or language switching (see .NET MAUI localization documentation), accessibility visual
+  adjustments (see .NET MAUI accessibility documentation), app icons or splash screens (see .NET
+  MAUI app icons documentation), or Bootstrap-style class theming (see Plugin.Maui.BootstrapTheme
   NuGet package).
-  中文触发:MAUI 主题、深浅色模式、AppThemeBinding、主题切换。
 license: MIT
 ---
 

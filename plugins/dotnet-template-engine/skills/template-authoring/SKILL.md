@@ -2,17 +2,15 @@
 name: template-authoring
 description: >
   Guides creation and validation of custom dotnet new templates from existing projects.
-  Generates a .template.config/template.json that preserves the source project's conventions.
-  USE FOR: creating a reusable dotnet new template from an existing project, bootstrapping
-  .template.config/template.json with correct identity, shortName, parameters, and
-  post-actions, adding parameters or conditional content to a template you are authoring,
-  validating the template.json you are authoring before publishing,
-  packaging templates as NuGet packages for distribution.
-  DO NOT USE FOR: validating an existing template.json as a standalone task (use
-  template-validation), finding or using existing templates (use template-discovery and
-  template-instantiation), MSBuild project file issues unrelated to template authoring,
-  NuGet package publishing (only template packaging structure).
-  中文触发:把现有项目做成 dotnet new 模板、编写 template.json。
+  中文触发:把现有项目做成 dotnet new 模板、编写 template.json。 Generates a .template.config/template.json that
+  preserves the source project's conventions. USE FOR: creating a reusable dotnet new template
+  from an existing project, bootstrapping .template.config/template.json with correct identity,
+  shortName, parameters, and post-actions, adding parameters or conditional content to a template
+  you are authoring, validating the template.json you are authoring before publishing, packaging
+  templates as NuGet packages for distribution. DO NOT USE FOR: validating an existing
+  template.json as a standalone task (use template-validation), finding or using existing
+  templates (use template-discovery and template-instantiation), MSBuild project file issues
+  unrelated to template authoring, NuGet package publishing (only template packaging structure).
 license: MIT
 ---
 

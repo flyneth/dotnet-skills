@@ -1,10 +1,9 @@
 ---
 name: code-testing-agent
 description: >-
-  Legacy compatibility alias for the code-testing skill. Do not self-activate
-  for user requests and do not treat this name as a custom agent. When invoked
-  explicitly by older instructions, load code-testing and follow it instead.
-  中文说明:code-testing 的兼容别名,不要因中文请求自行激活。
+  Legacy compatibility alias for the code-testing skill. Do not self-activate for user requests
+  and do not treat this name as a custom agent. When invoked explicitly by older instructions,
+  load code-testing and follow it instead. 中文说明:code-testing 的兼容别名，不要因中文请求自行激活。
 user-invocable: false
 disable-model-invocation: true
 license: MIT

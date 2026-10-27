@@ -3,15 +3,13 @@ license: MIT
 name: configure-auth
 description: >
   Add authentication and authorization to a Blazor Web App, accounting for the app's render mode.
-  USE WHEN the user needs [Authorize] on pages, AuthorizeView, role or policy-based access,
-  login/logout Identity pages, or AuthenticationStateProvider.
-  Also USE WHEN auth state is null after WebAssembly loads, SignInManager throws in an interactive
-  component, NotAuthorized content never renders in static SSR, or HttpContext.User is null in
-  an interactive component.
-  DO NOT USE for general component authoring (see author-component), for prerendering concerns
-  unrelated to auth (see support-prerendering), or for managing non-auth cascading state
-  (see coordinate-components).
-  中文触发:Blazor 登录认证授权、[Authorize]、AuthenticationStateProvider、认证配置。
+  中文触发:Blazor 登录认证授权、[Authorize]、AuthenticationStateProvider、认证配置。 USE WHEN the user needs
+  [Authorize] on pages, AuthorizeView, role or policy-based access, login/logout Identity pages,
+  or AuthenticationStateProvider. Also USE WHEN auth state is null after WebAssembly loads,
+  SignInManager throws in an interactive component, NotAuthorized content never renders in static
+  SSR, or HttpContext.User is null in an interactive component. DO NOT USE for general component
+  authoring (see author-component), for prerendering concerns unrelated to auth (see
+  support-prerendering), or for managing non-auth cascading state (see coordinate-components).
 ---
 
 # Configure Auth

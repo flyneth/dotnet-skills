@@ -1,17 +1,14 @@
 ---
 name: code-testing
 description: >-
-  ALWAYS USE for test work that requires changes: write, add, generate, repair,
-  or strengthen tests for existing code in xUnit, MSTest, NUnit, pytest,
-  Vitest/Jest, Go, or another framework. Includes regression cases, failing or
-  flaky tests, coverage-driven additions, and audit-then-fix requests. Focused
-  work stays direct; broad or multi-stage work invokes test-engineer. DO NOT USE
-  for only running tests, analysis-only audits, framework/platform migrations,
-  a test blocked on a missing production seam (testability-obstacle), or MSTest
-  API/configuration corrections that do not design new cases
-  (writing-mstest-tests). Within an active test-engineer pipeline, reuse supplied
-  guidance and do not re-enter this skill.
-  中文触发:写测试、加测试、修测试、补测试、强化测试(xUnit/MSTest/NUnit/pytest 等)。
+  ALWAYS USE for test work that requires changes: write, add, generate, repair, or strengthen
+  tests for existing code in xUnit, MSTest, NUnit, pytest, Vitest/Jest, Go, or another framework.
+  Includes regression cases, failing or flaky tests, coverage-driven additions, and
+  audit-then-fix. Focused work stays direct; broad or multi-stage work invokes test-engineer.
+  中文触发:写测试、加测试、修测试、补测试、强化测试。中文排除:MSTest 断言/配置修正用 writing-mstest-tests。 DO NOT USE for only running
+  tests, analysis-only audits, framework/platform migrations, a test blocked on a missing seam
+  (testability-obstacle), or MSTest API/configuration corrections (writing-mstest-tests). Within
+  an active test-engineer pipeline, reuse supplied guidance and do not re-enter.
 license: MIT
 ---
 

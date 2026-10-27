@@ -1,6 +1,6 @@
 ---
 name: csharp-scripts
-description: "Run file-based C# apps with the .NET CLI when the user explicitly wants C#/.NET code without creating a project. Use for C# language/API experiments, one-file C# apps, small multi-file C# apps composed with `#:include`/`#:exclude`, or C# file-based apps linked with `#:ref`. Do not use for language-agnostic throwaway scripts, generic computations, Python/PowerShell-style automation, full projects, or existing app integration. 中文触发:运行单个 C# 文件脚本、dotnet run file.cs、不建项目的 C# 代码试验、快速验证 C# API。"
+description: "Run file-based C# apps with the .NET CLI when the user explicitly wants C#/.NET code without creating a project. Use for C# language/API experiments, one-file C# apps, small multi-file C# apps composed with `#:include`/`#:exclude`, or C# file-based apps linked with `#:ref`. 中文触发:运行单个 C# 文件脚本、dotnet run file.cs、不建项目的 C# 代码试验、快速验证 C# API。 Do not use for language-agnostic throwaway scripts, generic computations, Python/PowerShell-style automation, full projects, or existing app integration."
 license: MIT
 ---
 

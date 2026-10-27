@@ -1,6 +1,6 @@
 ---
 name: build-perf-diagnostics
-description: "Diagnose MSBuild bottlenecks from binlog timelines and Target/Task Performance Summaries after build-perf-baseline establishes measurements. USE FOR: unknown build slowness, RAR >5s, analyzers >30% of Csc, one target >50% of build time, node utilization <80%, excessive Copy tasks, finding restore overhead. DO NOT USE FOR: known repeated-restore fixes (use eliminate-redundant-restores), initial baselines (use build-perf-baseline), incremental rebuilds (use incremental-build), parallelism tuning (use build-parallelism), non-MSBuild builds. 中文触发:定位构建瓶颈、binlog 时间线、Target/Task 耗时分析。"
+description: "Diagnose MSBuild bottlenecks from binlog timelines and Target/Task Performance Summaries after build-perf-baseline measurements. USE FOR: unknown slowness, RAR >5s, analyzers >30% of Csc, one target >50% of build time, node utilization <80%, excessive Copy, restore overhead. 中文触发:定位构建瓶颈、binlog 时间线、Target/Task 耗时分析。 DO NOT USE FOR: repeated-restore fixes (eliminate-redundant-restores), baselines (build-perf-baseline), incremental rebuilds (incremental-build), parallelism (build-parallelism), non-MSBuild builds."
 license: MIT
 ---
 
