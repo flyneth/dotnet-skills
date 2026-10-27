@@ -1,6 +1,6 @@
 ---
 name: assertion-quality
-description: "Analyze assertion quality, depth, variety, and false confidence in existing tests. ALWAYS USE when asked about weak, shallow, trivial, always-true, self-referential, assertion-free, presence/truthiness-only, or insufficiently diverse assertions, including MSTest, Jest, pytest, and Go. DO NOT USE for direct fixes: writing-mstest-tests owns supplied MSTest assertions; code-testing owns new cases. Use test-gap-analysis when asked whether tests would catch a production change, and test-anti-patterns for general severity-ranked audits. 中文触发:断言太弱、测试断言质量分析、无效断言、恒真断言。"
+description: "Analyze assertion quality, depth, variety, and false confidence in existing tests. ALWAYS USE for weak, shallow, trivial, always-true, self-referential, assertion-free, presence/truthiness-only, or insufficiently diverse assertions, including MSTest, Jest, pytest, Go. 中文触发:断言太弱、断言质量分析、无效断言、恒真断言。中文排除:同义反复/缺断言审查用 test-anti-patterns。 DO NOT USE for direct fixes (writing-mstest-tests owns MSTest assertions; code-testing owns new cases), test-gap-analysis, or general severity-ranked audits (test-anti-patterns)."
 license: MIT
 ---
 

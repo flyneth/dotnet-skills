@@ -1,7 +1,6 @@
 ---
 name: dotnet-trace-collect
-description: Guide developers through capturing diagnostic artifacts to diagnose production .NET performance issues. Use when the user needs help choosing diagnostic tools, collecting performance data, or understanding tool trade-offs across different environments (Windows/Linux, .NET Framework/modern .NET, container/non-container).
-  中文触发:生产环境 .NET 性能问题采集诊断数据、dotnet-trace、dotnet-counters 选型。
+description: Guide developers through capturing diagnostic artifacts to diagnose production .NET performance issues. 中文触发:生产环境 .NET 性能问题采集诊断数据、dotnet-trace、dotnet-counters 选型。 Use when the user needs help choosing diagnostic tools, collecting performance data, or understanding tool trade-offs across different environments (Windows/Linux, .NET Framework/modern .NET, container/non-container).
 license: MIT
 ---
 

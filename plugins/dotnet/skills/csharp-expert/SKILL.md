@@ -2,14 +2,13 @@
 name: csharp-expert
 description: >-
   Route C# and .NET requests to the exact installed specialist or smallest dotnet/skills
-  marketplace plugin. USE FOR: "which specialist should own this" or "how do I add the skill"
-  requests involving ASP.NET Core endpoints, Blazor, MAUI binding, Windows Forms specialist
-  selection or installation, EF Core queries, test or framework migration, runtime
-  CPU/allocation evidence, file-based C#, editor/compiler defects, a surviving MSBuild
-  `.binlog`, or a plugin missing from `/skills`; also use for C# semantics
-  when no narrower specialist exists. DO NOT USE FOR: requests that already name the exact
-  installed specialist to invoke, or work unrelated to C# or .NET.
-  中文触发:C#/.NET 问题路由、该用哪个技能或插件、找不到对口专家。
+  marketplace plugin. 中文触发:C#/.NET 问题路由、该用哪个技能或插件、找不到对口专家。 USE FOR: "which specialist should own
+  this" or "how do I add the skill" requests involving ASP.NET Core endpoints, Blazor, MAUI
+  binding, Windows Forms specialist selection or installation, EF Core queries, test or framework
+  migration, runtime CPU/allocation evidence, file-based C#, editor/compiler defects, a surviving
+  MSBuild `.binlog`, or a plugin missing from `/skills`; also use for C# semantics when no
+  narrower specialist exists. DO NOT USE FOR: requests that already name the exact installed
+  specialist to invoke, or work unrelated to C# or .NET.
 license: MIT
 ---
 

@@ -1,17 +1,14 @@
 ---
 name: test-smell-detection
 description: >
-  Audits existing tests in any language using formal, research-backed test
-  smell names and the testsmells.org 19-smell academic taxonomy. Use when the
-  caller asks for an academic or citable test-smell review, named smell
-  categories, or a formal severity-ranked smell assessment. Covers Assertion
-  Roulette, Conditional Test Logic, Mystery Guest, Eager Test, Sleepy Test,
-  Unknown Test, Sensitive Equality, and the rest of the catalog across .NET,
-  Python, JavaScript/TypeScript, Java, Go, Ruby, Rust, Swift, Kotlin,
-  PowerShell, and C++. DO NOT USE FOR a quick pragmatic test review (use
-  test-anti-patterns), writing or running tests, framework migration, coverage,
-  or assertion-diversity metrics.
-  中文触发:测试坏味道、test smell、按学术分类审查测试。
+  Audit existing tests in any language using formal, research-backed test smell names and the
+  testsmells.org 19-smell taxonomy. 中文触发:测试坏味道、test smell、按学术分类审查测试。 Use when the caller asks for
+  an academic or citable test-smell review, named smell categories, or a formal severity-ranked
+  smell assessment. Covers Assertion Roulette, Conditional Test Logic, Mystery Guest, Eager Test,
+  Sleepy Test, Unknown Test, Sensitive Equality, and the rest across .NET, Python,
+  JavaScript/TypeScript, Java, Go, Ruby, Rust, Swift, Kotlin, PowerShell, C++. DO NOT USE FOR a
+  quick pragmatic test review (test-anti-patterns), writing or running tests, framework migration,
+  coverage, or assertion-diversity metrics.
 license: MIT
 ---
 

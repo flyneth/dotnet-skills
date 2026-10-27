@@ -1,15 +1,13 @@
 ---
 name: migrate-nunit-to-mstest
 description: >
-  Convert .NET tests from NUnit 3/4 to MSTest v4 while preserving VSTest or
-  MTP. Use for replacing NUnit/NUnit3TestAdapter packages, Test/TestCase/
-  TestCaseSource/Values attributes, constraint assertions, SetUp/TearDown,
-  OneTimeSetUp, SetUpFixture, FixtureLifeCycle, TestContext, categories,
-  retries, timeouts, and NUnit parallelization. Also use when a "convert NUnit
-  to MSTest" request may already be migrated: inspect and report the no-op. Do
-  not use for NUnit version upgrades, xUnit/TUnit conversion, MSTest upgrades,
-  or runner-only VSTest-to-MTP migration.
-  中文触发:NUnit 迁移到 MSTest、替换 NUnit 与 NUnit3TestAdapter。
+  Convert .NET tests from NUnit 3/4 to MSTest v4 while preserving VSTest or MTP. 中文触发:NUnit 迁移到
+  MSTest、替换 NUnit 与 NUnit3TestAdapter。 Use for replacing NUnit/NUnit3TestAdapter packages,
+  Test/TestCase/ TestCaseSource/Values attributes, constraint assertions, SetUp/TearDown,
+  OneTimeSetUp, SetUpFixture, FixtureLifeCycle, TestContext, categories, retries, timeouts, and
+  NUnit parallelization. Also use when a "convert NUnit to MSTest" request may already be
+  migrated: inspect and report the no-op. Do not use for NUnit version upgrades, xUnit/TUnit
+  conversion, MSTest upgrades, or runner-only VSTest-to-MTP migration.
 license: MIT
 ---
 

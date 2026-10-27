@@ -1,17 +1,15 @@
 ---
 name: maui-dependency-injection
 description: >
-  Guidance for configuring dependency injection in .NET MAUI apps — service
-  registration in MauiProgram.cs, lifetime selection (Singleton / Transient / Scoped),
-  constructor injection, Shell navigation auto-resolution, platform-specific
-  registrations, and testability patterns.
-  USE FOR: "dependency injection", "DI setup", "AddSingleton", "AddTransient",
-  "AddScoped", "service registration", "constructor injection", "IServiceProvider",
-  "MauiProgram DI", "register services", "BindingContext injection".
-  DO NOT USE FOR: data binding (use maui-data-binding), Shell route configuration
-  (use maui-shell-navigation), unit-test mocking frameworks (use standard xUnit
-  and NSubstitute patterns).
-  中文触发:MAUI 依赖注入、MauiProgram 服务注册、服务生命周期选择。
+  Guidance for configuring dependency injection in .NET MAUI apps — service registration in
+  MauiProgram.cs, lifetime selection (Singleton / Transient / Scoped), constructor injection,
+  Shell navigation auto-resolution, platform-specific registrations, and testability patterns.
+  中文触发:MAUI 依赖注入、MauiProgram 服务注册、服务生命周期选择。 USE FOR: "dependency injection", "DI setup",
+  "AddSingleton", "AddTransient", "AddScoped", "service registration", "constructor injection",
+  "IServiceProvider", "MauiProgram DI", "register services", "BindingContext injection". DO NOT
+  USE FOR: data binding (use maui-data-binding), Shell route configuration (use
+  maui-shell-navigation), unit-test mocking frameworks (use standard xUnit and NSubstitute
+  patterns).
 license: MIT
 ---
 

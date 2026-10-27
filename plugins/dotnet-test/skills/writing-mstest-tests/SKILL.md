@@ -1,18 +1,15 @@
 ---
 name: writing-mstest-tests
 description: >
-  ALWAYS USE when asked to fix, rewrite, update, improve, modernize, show
-  corrected code for, or explain existing MSTest tests or MSTest-specific
-  configuration. Use for "review" when corrected code or edits are wanted, even
-  for one pasted assertion or passing tests with bad failure output. Covers
-  expected/actual labels; generic Boolean, collection, string, numeric, null,
-  identity, exception, hard-cast, and object[] checks;
-  TestContext/lifecycle; timeout/cancellation; OS/CI conditions, retry, cleanup,
-  parallelization, MSTest.Sdk project setup, and MSTESTxxxx. Honor the installed
-  MSTest version. DO NOT USE to design new test cases (code-testing),
-  perform report-only audits, create project files rather than explain MSTest
-  setup, run tests, migrate frameworks, or handle non-MSTest/non-.NET code.
-  中文触发:修复或改进 MSTest 测试、MSTest 特有配置问题。
+  ALWAYS USE when asked to fix, rewrite, update, improve, modernize, show corrected code for, or
+  explain existing MSTest tests or MSTest-specific configuration. 中文触发:修复或改进 MSTest 测试、MSTest
+  特有配置问题。中文排除:设计新用例用 code-testing。 Use for "review" when corrected code or edits are wanted, even
+  for one pasted assertion or passing tests with bad failure output. Covers expected/actual
+  labels; generic Boolean, collection, string, numeric, null, identity, exception, hard-cast, and
+  object[] checks; TestContext/lifecycle; timeout/cancellation; OS/CI conditions, retry, cleanup,
+  parallelization, MSTest.Sdk setup, and MSTESTxxxx. Honor the installed MSTest version. DO NOT
+  USE to design new test cases (code-testing), report-only audits, create project files rather
+  than explain MSTest setup, run tests, migrate frameworks, or handle non-MSTest/non-.NET code.
 license: MIT
 metadata:
   portability: portable

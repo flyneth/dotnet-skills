@@ -1,15 +1,13 @@
 ---
 name: test-gap-analysis
 description: >-
-  Find caller-visible production changes existing tests would miss through
-  pseudo-mutation analysis; verify candidates or close gaps only when requested.
-  Includes read-only per-test composition for grading. Polyglot.
-  USE FOR: would tests catch a bug, behavioral blind spots, surviving mutations.
-  DO NOT USE FOR: concrete fix/feature revision proof (test-value-evidence);
-  suite taxonomy (test-tagging); .NET coverage, Cobertura, plateaus or
-  coverage-backed priorities (coverage-analysis); named CRAP (crap-score);
-  new suites (code-testing); assertion/smell audits; mutation tools.
-  中文触发:测试缺口分析、现有测试会漏掉哪些生产改动。
+  Find caller-visible production changes existing tests would miss through pseudo-mutation
+  analysis; verify candidates or close gaps only when requested. Includes read-only per-test
+  composition for grading. Polyglot. USE FOR: would tests catch a bug, behavioral blind spots,
+  surviving mutations. 中文触发:测试缺口分析、现有测试会漏掉哪些生产改动。 DO NOT USE FOR: concrete fix/feature proof
+  (test-value-evidence); suite taxonomy (test-tagging); .NET coverage, Cobertura, plateaus or
+  coverage-backed priorities (coverage-analysis); named CRAP (crap-score); new suites
+  (code-testing); assertion/smell audits; mutation tools.
 license: MIT
 ---
 

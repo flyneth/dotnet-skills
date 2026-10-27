@@ -1,19 +1,16 @@
 ---
 name: template-discovery
 description: >
-  Helps find, inspect, and compare (at a high level) .NET project templates.
-  Resolves natural-language project descriptions to ranked template matches
-  with pre-filled parameters.
-  USE FOR: finding the right dotnet new template for a task, inspecting a template's
-  parameters and constraints, understanding what a template
-  produces before creating a project, resolving intent like "web API with auth" to
-  concrete template + parameters.
-  DO NOT USE FOR: actually creating projects (use template-instantiation), authoring
-  custom templates (use template-authoring), producing a detailed side-by-side comparison
-  (use template-comparison), choosing cross-parameter defaults during creation
-  (use template-smart-defaults), MSBuild or build issues (use dotnet-msbuild plugin),
-  NuGet package management unrelated to template packages.
-  中文触发:找合适的 .NET 项目模板、根据需求推荐模板。
+  Helps find, inspect, and compare (at a high level) .NET project templates. Resolves
+  natural-language project descriptions to ranked template matches with pre-filled parameters. USE
+  FOR: finding the right dotnet new template for a task, inspecting a template's parameters and
+  constraints, understanding what a template produces before creating a project, resolving intent
+  like "web API with auth" to concrete template + parameters. 中文触发:找合适的 .NET 项目模板、根据需求推荐模板。 DO NOT
+  USE FOR: actually creating projects (use template-instantiation), authoring custom templates
+  (use template-authoring), producing a detailed side-by-side comparison (use
+  template-comparison), choosing cross-parameter defaults during creation (use
+  template-smart-defaults), MSBuild or build issues (use dotnet-msbuild plugin), NuGet package
+  management unrelated to template packages.
 license: MIT
 ---
 

@@ -1,14 +1,13 @@
 ---
 name: dotnet-aot-compat
 description: >
-  Make .NET projects compatible with Native AOT and trimming by systematically
-  resolving IL trim/AOT analyzer warnings. USE FOR: making projects AOT-compatible,
-  fixing trimming warnings, resolving IL warnings (IL2026, IL2070, IL2067, IL2072,
-  IL3050), adding DynamicallyAccessedMembers annotations, enabling IsAotCompatible.
-  DO NOT USE FOR: publishing native AOT binaries, optimizing binary size, replacing
-  reflection-heavy libraries with alternatives.
-  INVOKES: no tools — pure knowledge skill.
-  中文触发:Native AOT 兼容、裁剪警告、IL2026/IL3050、AOT 发布失败。
+  Make .NET projects compatible with Native AOT and trimming by systematically resolving IL
+  trim/AOT analyzer warnings. USE FOR: making projects AOT-compatible, fixing trimming warnings,
+  resolving IL warnings (IL2026, IL2070, IL2067, IL2072, IL3050), adding
+  DynamicallyAccessedMembers annotations, enabling IsAotCompatible. 中文触发:Native AOT
+  兼容、裁剪警告、IL2026/IL3050、AOT 发布失败。 DO NOT USE FOR: publishing native AOT binaries, optimizing
+  binary size, replacing reflection-heavy libraries with alternatives. INVOKES: no tools — pure
+  knowledge skill.
 license: MIT
 ---
 

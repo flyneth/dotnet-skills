@@ -1,13 +1,11 @@
 ---
 name: crap-score
 description: >
-  Calculates CRAP (Change Risk Anti-Patterns) for a named .NET method, class, or
-  file. USE FOR: explicit CRAP calculation or coverage-and-complexity risk
-  within that named target, including which tests to prioritize. DO NOT USE
-  FOR: project-wide coverage/CRAP, plateaus, or project-wide blockers/priorities
-  (coverage-analysis); behavioral/pseudo-mutation gaps (test-gap-analysis);
-  writing tests; test runs without CRAP context.
-  中文触发:计算 CRAP 分数、覆盖率加复杂度的风险评分。
+  Calculate CRAP (Change Risk Anti-Patterns) for a named .NET method, class, or file. USE FOR:
+  explicit CRAP calculation or coverage-and-complexity risk for that target, including which tests
+  to prioritize. 中文触发:计算 CRAP 分数、覆盖率与复杂度风险评分。 DO NOT USE FOR: project-wide coverage/CRAP
+  (coverage-analysis); behavioral gaps (test-gap-analysis); writing tests; test runs without CRAP
+  context.
 license: MIT
 ---
 

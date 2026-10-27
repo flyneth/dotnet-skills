@@ -3,19 +3,16 @@ license: MIT
 name: use-igniteui-blazor
 description: >
   Add, configure, or review Ignite UI for Blazor Lite component support in Blazor applications.
-  USE FOR: installing IgniteUI.Blazor.Lite or IgniteUI.Blazor.GridLite,
-  registering AddIgniteUIBlazor() in Blazor Server, WASM, Hybrid, or split
-  Blazor Web App projects, adding @using IgniteUI.Blazor.Controls, wiring the
-  theme stylesheet, picking the right host page, locating the GridLite
-  stylesheet path, explaining single-project vs split Server/Client Web App
-  setup differences, and checking where an interactive render mode is needed
-  for Ignite UI components to work.
-  DO NOT USE FOR: general Blazor component authoring without Ignite UI, choosing
-  app architecture or render mode from scratch (see create-blazor-project),
-  JavaScript interop (see use-js-interop), authentication (see configure-auth),
-  prerendering (see support-prerendering), or layout/component design questions that need
-  no Ignite UI setup.
-  中文触发:安装或配置 Ignite UI for Blazor 组件库。
+  中文触发:安装或配置 Ignite UI for Blazor 组件库。 USE FOR: installing IgniteUI.Blazor.Lite or
+  IgniteUI.Blazor.GridLite, registering AddIgniteUIBlazor() in Blazor Server, WASM, Hybrid, or
+  split Blazor Web App projects, adding @using IgniteUI.Blazor.Controls, wiring the theme
+  stylesheet, picking the right host page, locating the GridLite stylesheet path, explaining
+  single-project vs split Server/Client Web App setup differences, and checking where an
+  interactive render mode is needed for Ignite UI components to work. DO NOT USE FOR: general
+  Blazor component authoring without Ignite UI, choosing app architecture or render mode from
+  scratch (see create-blazor-project), JavaScript interop (see use-js-interop), authentication
+  (see configure-auth), prerendering (see support-prerendering), or layout/component design
+  questions that need no Ignite UI setup.
 ---
 
 # Application Setup & Component Registration

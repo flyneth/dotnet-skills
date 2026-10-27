@@ -1,6 +1,6 @@
 ---
 name: resolve-project-references
-description: "Guide for interpreting ResolveProjectReferences time in MSBuild performance summaries. Activate when ResolveProjectReferences appears as the most expensive target and developers are trying to optimize it directly. Explains that the reported time includes wait time for dependent project builds and is misleading. Guides users to focus on task self-time instead. Do not activate for general build performance -- use build-perf-diagnostics instead. 中文触发:ResolveProjectReferences 耗时高、项目引用拖慢构建。"
+description: "Interpret ResolveProjectReferences time in MSBuild performance summaries. 中文触发:ResolveProjectReferences 耗时高、项目引用拖慢构建。 Activate when ResolveProjectReferences is the most expensive target and developers try to optimize it directly. The reported time includes wait time for dependent project builds and is misleading; focus on task self-time. Do not activate for general build performance -- use build-perf-diagnostics."
 license: MIT
 ---
 

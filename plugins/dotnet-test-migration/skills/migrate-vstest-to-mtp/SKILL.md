@@ -1,17 +1,15 @@
 ---
 name: migrate-vstest-to-mtp
 description: >
-  Use this skill before answering, planning, or editing whenever .NET tests or
-  CI are switching from VSTest to Microsoft.Testing.Platform (MTP), or an MTP
-  migration behaves differently. Triggers include "switch from VSTest";
+  Use this skill before answering, planning, or editing whenever .NET tests or CI are switching
+  from VSTest to Microsoft.Testing.Platform (MTP), or an MTP migration behaves differently.
+  中文触发:VSTest 切换到 Microsoft.Testing.Platform、MTP 迁移。 Triggers include "switch from VSTest";
   MSTest/NUnit/xUnit MTP enablement; OutputType=Exe only for test projects in
-  Directory.Build.props; EnableMSTestRunner, EnableNUnitRunner,
-  UseMicrosoftTestingPlatformRunner, or YTest.MTP.XUnit2; .NET 10 global.json
-  test.runner and TestingPlatformDotnetTestSupport; translating VSTest
-  filters, logger, coverage, blame, or dump arguments; replacing VSTest@3;
-  and exit code 8 or zero tests. Also use for xUnit v3 MTP filters during a
-  v2-to-v3 upgrade. Do not use for framework conversion, TFM, UWP, or WinUI.
-  中文触发:VSTest 切换到 Microsoft.Testing.Platform、MTP 迁移。
+  Directory.Build.props; EnableMSTestRunner, EnableNUnitRunner, UseMicrosoftTestingPlatformRunner,
+  or YTest.MTP.XUnit2; .NET 10 global.json test.runner and TestingPlatformDotnetTestSupport;
+  translating VSTest filters, logger, coverage, blame, or dump arguments; replacing VSTest@3; and
+  exit code 8 or zero tests. Also use for xUnit v3 MTP filters during a v2-to-v3 upgrade. Do not
+  use for framework conversion, TFM, UWP, or WinUI.
 license: MIT
 ---
 

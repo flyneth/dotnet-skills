@@ -1,22 +1,16 @@
 ---
 name: migrate-dotnet9-to-dotnet10
 description: >
-  Migrate a .NET 9 project or solution to .NET 10 and resolve all breaking changes.
-  USE FOR: upgrading TargetFramework from net9.0 to net10.0, fixing build errors
-  after updating the .NET 10 SDK, resolving source and behavioral changes in
-  .NET 10 / C# 14 / ASP.NET Core 10 / EF Core 10, updating Dockerfiles for
-  Debian-to-Ubuntu base images, resolving obsoletion warnings
-  (SYSLIB0058-SYSLIB0062), adapting to SDK/NuGet changes (NU1510,
-  PrunePackageReference), migrating System.Linq.Async to built-in
-  AsyncEnumerable, fixing OpenApi v2 API changes, cryptography renames, and
-  C# 14 compiler changes (field keyword, extension keyword, span overloads).
-  DO NOT USE FOR: .NET Framework migrations, upgrading from .NET 8 or earlier
-  (use migrate-dotnet8-to-dotnet9 first), greenfield .NET 10 projects, or
-  cosmetic modernization.
-  LOADS REFERENCES: csharp-compiler, core-libraries, sdk-msbuild (always);
-  aspnet-core, efcore, cryptography, extensions-hosting,
+  Migrate a .NET 9 project or solution to .NET 10 and resolve breaking changes. 中文触发:.NET 9 升级到
+  10、net10.0、升级后报错。 USE FOR: upgrading TargetFramework net9.0→net10.0, build errors after the .NET
+  10 SDK update, .NET 10 / C# 14 / ASP.NET Core 10 / EF Core 10 source and behavioral changes,
+  Dockerfiles for Debian-to-Ubuntu images, obsoletion warnings (SYSLIB0058–SYSLIB0062), SDK/NuGet
+  changes (NU1510, PrunePackageReference), System.Linq.Async to AsyncEnumerable, OpenApi v2
+  changes, cryptography renames, and C# 14 compiler changes. DO NOT USE FOR: .NET Framework
+  migrations, upgrades from .NET 8 or earlier (migrate-dotnet8-to-dotnet9 first), greenfield .NET
+  10 projects, cosmetic modernization. LOADS REFERENCES: csharp-compiler, core-libraries,
+  sdk-msbuild (always); aspnet-core, efcore, cryptography, extensions-hosting,
   serialization-networking, winforms-wpf, containers-interop (selective).
-  中文触发:.NET 9 升级到 10、net10.0、升级后报错。
 license: MIT
 ---
 

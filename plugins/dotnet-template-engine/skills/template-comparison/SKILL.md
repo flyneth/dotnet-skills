@@ -1,15 +1,14 @@
 ---
 name: template-comparison
 description: >
-  Compares two or more dotnet new templates side by side to help users choose between
-  them based on parameters, feature support, frameworks, and classifications.
-  USE FOR: deciding between similar templates (webapi vs webapp, blazor vs
-  blazorwasm, console vs worker), producing a side-by-side comparison of parameters and
-  feature support, understanding how templates differ before creating a project.
-  DO NOT USE FOR: creating a project from a template (use template-instantiation),
-  authoring or validating custom templates (use template-authoring and template-validation),
-  general single-template discovery (use template-discovery).
-  中文触发:对比多个 .NET 项目模板、该选哪个模板。
+  Compares two or more dotnet new templates side by side to help users choose between them based
+  on parameters, feature support, frameworks, and classifications. USE FOR: deciding between
+  similar templates (webapi vs webapp, blazor vs blazorwasm, console vs worker), producing a
+  side-by-side comparison of parameters and feature support, understanding how templates differ
+  before creating a project. 中文触发:对比多个 .NET 项目模板、该选哪个模板。 DO NOT USE FOR: creating a project from a
+  template (use template-instantiation), authoring or validating custom templates (use
+  template-authoring and template-validation), general single-template discovery (use
+  template-discovery).
 license: MIT
 ---
 

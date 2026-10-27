@@ -1,17 +1,15 @@
 ---
 name: template-smart-defaults
 description: >
-  Applies cross-parameter default rules when creating .NET projects with dotnet new,
-  filling gaps consistently without overriding values the user set explicitly.
-  USE FOR: choosing which target framework to pair with native AOT, deciding whether to
-  keep HTTPS when authentication is enabled, recognizing that controllers and minimal-API
-  flags are mutually exclusive, filling unset related parameters during project creation,
-  explaining why a default was applied and ensuring an explicit user value is never
-  overridden.
-  DO NOT USE FOR: creating the project itself (use template-instantiation), finding or
-  comparing templates (use template-discovery and template-comparison), authoring or
-  validating custom templates (use template-authoring and template-validation).
-  中文触发:dotnet new 创建项目时自动补全参数默认值。
+  Applies cross-parameter default rules when creating .NET projects with dotnet new, filling gaps
+  consistently without overriding values the user set explicitly. 中文触发:dotnet new 创建项目时自动补全参数默认值。
+  USE FOR: choosing which target framework to pair with native AOT, deciding whether to keep HTTPS
+  when authentication is enabled, recognizing that controllers and minimal-API flags are mutually
+  exclusive, filling unset related parameters during project creation, explaining why a default
+  was applied and ensuring an explicit user value is never overridden. DO NOT USE FOR: creating
+  the project itself (use template-instantiation), finding or comparing templates (use
+  template-discovery and template-comparison), authoring or validating custom templates (use
+  template-authoring and template-validation).
 license: MIT
 ---
 

@@ -1,11 +1,10 @@
 ---
 name: analyzing-dotnet-performance
 description: >-
-  Scans .NET code for ~50 performance anti-patterns across async, memory,
-  strings, collections, LINQ, regex, serialization, and I/O with tiered
-  severity classification. Use when analyzing .NET code for optimization
+  Scans .NET code for ~50 performance anti-patterns across async, memory, strings, collections,
+  LINQ, regex, serialization, and I/O with tiered severity classification. 中文触发:.NET
+  代码性能审查、找出性能反模式、异步/字符串/集合/LINQ/序列化性能问题。 Use when analyzing .NET code for optimization
   opportunities, reviewing hot paths, or auditing allocation-heavy patterns.
-  中文触发:.NET 代码性能审查、找出性能反模式、异步/字符串/集合/LINQ/序列化性能问题。
 license: MIT
 ---
 

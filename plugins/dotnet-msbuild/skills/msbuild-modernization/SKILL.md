@@ -1,6 +1,6 @@
 ---
 name: msbuild-modernization
-description: "Guide for modernizing and migrating MSBuild project files to SDK-style format. USE FOR: converting legacy .csproj/.vbproj with verbose XML to SDK-style, migrating packages.config to PackageReference, removing Properties/AssemblyInfo.cs in favor of auto-generation, eliminating explicit Compile Include lists via implicit globbing, consolidating shared settings into Directory.Build.props. Indicators of legacy projects: ToolsVersion attribute, an Import of Microsoft.CSharp.targets via $(MSBuildToolsPath), .csproj files over 50 lines for simple projects. DO NOT USE FOR: projects already in SDK-style format, non-.NET build systems (npm, Maven, CMake), .NET Framework projects that cannot move to SDK-style. 中文触发:旧式 csproj 迁移 SDK 风格、迁移 packages.config、项目文件现代化。"
+description: "Modernize and migrate MSBuild project files to SDK style. 中文触发:旧式 csproj 迁移 SDK 风格、迁移 packages.config、项目文件现代化。 USE FOR: converting legacy .csproj/.vbproj with verbose XML, migrating packages.config to PackageReference, removing Properties/AssemblyInfo.cs, eliminating explicit Compile Include lists via globbing, consolidating shared settings into Directory.Build.props. Legacy indicators: ToolsVersion, Import of Microsoft.CSharp.targets via $(MSBuildToolsPath), .csproj over 50 lines for a simple project. DO NOT USE FOR: projects already SDK-style, non-.NET build systems, .NET Framework projects that cannot move."
 license: MIT
 ---
 

@@ -1,17 +1,14 @@
 ---
 name: generate-testability-wrappers
 description: >
-  DO NOT USE when the target already consumes an injected interface or built-in
-  abstraction such as IFileSystem or TimeProvider, even if the request says
-  "generate a wrapper"; no new wrapper is needed. Use only when C# source calls
-  an ambient/static dependency and no injectable seam exists: first-time
-  TimeProvider, IHttpClientFactory, or System.IO.Abstractions adoption; minimal
-  Environment/Console/Process wrappers; IProcessRunner; DI registration; or an
-  ambient seam that preserves a static API. Exclude static detection
-  (detect-static-dependencies), migration to an existing/registered abstraction
-  (migrate-static-to-wrapper), one blocked behavior plus deterministic tests
+  DO NOT USE when the target already consumes an injected interface or built-in abstraction such
+  as IFileSystem or TimeProvider, even if the request says "generate a wrapper"; no new wrapper is
+  needed. 中文触发:为难以测试的依赖生成可注入的包装接口。 Use only when C# source calls an ambient/static dependency and
+  no injectable seam exists: TimeProvider, IHttpClientFactory, System.IO.Abstractions adoption;
+  minimal Environment/Console/Process wrappers; IProcessRunner; DI registration; an ambient seam
+  preserving a static API. Exclude static detection (detect-static-dependencies), migration to an
+  existing abstraction (migrate-static-to-wrapper), one blocked behavior plus tests
   (testability-obstacle), and general interface design.
-  中文触发:为难以测试的依赖生成可注入的包装接口。
 license: MIT
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: filter-syntax
-description: "Reference-only filter syntax for VSTest and MTP with MSTest, NUnit, xUnit v3, and TUnit. Load only after the platform/framework is known and a consumer needs to create or translate a filter. Do not load for unfiltered runs or platform detection. Used by run-tests and mtp-hot-reload; never invoke directly. 中文触发:测试过滤语法、dotnet test --filter 用法。"
+description: "Reference-only filter syntax for VSTest and MTP with MSTest, NUnit, xUnit v3, and TUnit. Load only after the platform/framework is known and a consumer needs to create or translate a filter. Do not load for unfiltered runs or platform detection. Used by run-tests and mtp-hot-reload; never invoke directly. 中文说明:测试过滤语法参考(仅引用,不自行激活)。"
 user-invocable: false
 disable-model-invocation: true
 license: MIT

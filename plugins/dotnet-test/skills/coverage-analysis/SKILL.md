@@ -1,18 +1,13 @@
 ---
 name: coverage-analysis
 description: >
-  Activation requires either supplied .NET coverage reports/percentages/line,
-  branch, or condition metrics, or an explicit request to collect .NET coverage
-  for analysis. USE FOR: interpreting that evidence, including Cobertura data,
-  partial conditions, plateaus, target arithmetic,
-  project-wide coverage-backed CRAP, and coverage-backed refactoring safety.
-  Analyze supplied reports directly without rerunning tests or installing
-  tools. DO NOT USE FOR: requests with neither coverage evidence nor explicit
-  coverage-collection intent, including hypothetical change-survival questions
-  (use test-gap-analysis); CRAP or refactoring safety for one named target (use
-  crap-score); or requests owned by test-tagging, find-untested-sources,
-  test-anti-patterns, run-tests, or code-testing.
-  中文触发:覆盖率报告分析、提高覆盖率、收集 .NET 覆盖率。
+  Activation requires supplied .NET coverage reports/percentages/line, branch, or condition
+  metrics, or an explicit request to collect .NET coverage for analysis. USE FOR: interpreting
+  that evidence, Cobertura, partial conditions, plateaus, target arithmetic, project-wide
+  coverage-backed CRAP, coverage-backed refactoring safety. Analyze supplied reports without
+  rerunning tests. 中文触发:覆盖率报告分析、提高覆盖率、收集 .NET 覆盖率。 DO NOT USE FOR: requests with neither coverage
+  evidence nor collection intent (test-gap-analysis); named-target CRAP (crap-score); or requests
+  owned by test-tagging, find-untested-sources, test-anti-patterns, run-tests, code-testing.
 license: MIT
 ---
 

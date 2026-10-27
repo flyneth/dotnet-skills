@@ -3,15 +3,14 @@ name: system-text-json-net11
 description: >
   Imperative guidance for the System.Text.Json APIs added in .NET 11: the built-in
   `JsonNamingPolicy.PascalCase` naming policy, and the strongly-typed generic
-  `JsonSerializerOptions.GetTypeInfo` and `JsonSerializerOptions.TryGetTypeInfo`
-  metadata accessors (generic overloads that return a typed `JsonTypeInfo`).
-  USE ONLY when the user is targeting net11.0 or later and needs
-  PascalCase JSON property or dictionary-key names without writing a custom naming policy, a strongly-typed
-  generic `JsonTypeInfo` instead of the non-generic `JsonTypeInfo`, or a no-throw way to probe
-  whether a type's serialization metadata is resolved.
-  DO NOT USE when the target is earlier than net11.0, the requested behavior uses an
-  established pre-net11 naming policy, or the user explicitly selected another JSON library.
-  中文触发:.NET 11 新 System.Text.Json API、PascalCase 命名策略。
+  `JsonSerializerOptions.GetTypeInfo` and `JsonSerializerOptions.TryGetTypeInfo` metadata
+  accessors (generic overloads that return a typed `JsonTypeInfo`). 中文触发:.NET 11 新
+  System.Text.Json API、PascalCase 命名策略。 USE ONLY when the user is targeting net11.0 or later and
+  needs PascalCase JSON property or dictionary-key names without writing a custom naming policy, a
+  strongly-typed generic `JsonTypeInfo` instead of the non-generic `JsonTypeInfo`, or a no-throw
+  way to probe whether a type's serialization metadata is resolved. DO NOT USE when the target is
+  earlier than net11.0, the requested behavior uses an established pre-net11 naming policy, or the
+  user explicitly selected another JSON library.
 license: MIT
 ---
 
