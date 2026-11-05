@@ -168,11 +168,12 @@ jobs:
         run: |
           set -euo pipefail
           PUBLISHED=""
-          for attempt in 1 2 3 4 5; do
+          # npm's CDN lags behind the registry after publish; wait up to ~4 min.
+          for attempt in 1 2 3 4 5 6 7 8; do
             PUBLISHED="$(npm view "dotnet-skills@${VERSION}" version 2>/dev/null || true)"
             if [[ "$PUBLISHED" == "$VERSION" ]]; then break; fi
-            echo "The registry does not serve dotnet-skills@${VERSION} yet (attempt ${attempt}/5); retrying in 5s."
-            sleep 5
+            echo "The registry does not serve dotnet-skills@${VERSION} yet (attempt ${attempt}/8); retrying in 30s."
+            sleep 30
           done
           if [[ "$PUBLISHED" != "$VERSION" ]]; then
             echo "::error::dotnet-skills@${VERSION} is not readable from the registry after publishing (got '$PUBLISHED')."
